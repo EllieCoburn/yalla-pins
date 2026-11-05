@@ -65,23 +65,27 @@ def arches(spec, P):
     ids = spec["products"]
     n = len(ids)
     assert n in (2, 3, 4, 6), "arches layout takes 2, 3, 4 or 6 products"
-    cols = 3 if n == 3 else 2
-    rows = (n + cols - 1) // cols
+    cols = 2
+    rows = 2 if n == 3 else (n + 1) // 2
     labels = spec.get("labels", True)
-    radius = 140 if cols == 3 else 210
-    lab_size = 24 if cols == 3 else 28
+    radius = 210
+    lab_size = 28 if n <= 4 else 26
     cells = []
-    for pid in ids:
+    for i, pid in enumerate(ids):
+        wide = (n == 3 and i == 0)
         p = P[pid]
         lab = (f'<p style="margin:0;font:400 {lab_size}px/1.2 Lora;color:{text};text-align:center">{html.escape(p["name"])}</p>'
                if labels else "")
-        cells.append(f'<div style="display:flex;flex-direction:column;align-items:stretch;gap:12px;min-height:0">'
-                     f'<div style="flex:1;min-height:0;border-radius:{radius}px {radius}px 0 0;background:{arch};'
-                     f'display:flex;align-items:flex-end;justify-content:center;box-sizing:border-box;padding:{radius * 0.45:.0f}px 24px 24px">'
+        rad = "430px 430px 0 0 / 240px 240px 0 0" if wide else f"{radius}px {radius}px 0 0"
+        padtop = 70 if wide else (60 if n >= 6 else 80)
+        span = "grid-column:span 2;" if wide else ""
+        cells.append(f'<div style="{span}display:flex;flex-direction:column;align-items:stretch;gap:10px;min-height:0">'
+                     f'<div style="flex:1;min-height:0;border-radius:{rad};background:{arch};'
+                     f'display:flex;align-items:flex-end;justify-content:center;box-sizing:border-box;padding:{padtop}px 18px 20px">'
                      f'<img src="{a(p["image"])}" style="max-width:100%;max-height:100%;min-height:0;object-fit:contain"></div>{lab}</div>')
     grid = (f'<div style="flex:1;min-height:0;padding:0 70px;margin:48px 0 44px;display:grid;'
             f'grid-template-columns:repeat({cols},minmax(0,1fr));grid-template-rows:repeat({rows},minmax(0,1fr));'
-            f'column-gap:{28 if cols == 3 else 40}px;row-gap:30px">{"".join(cells)}</div>')
+            f'column-gap:40px;row-gap:{24 if n >= 6 else 30}px">{"".join(cells)}</div>')
     return (f'<div style="width:1000px;height:1500px;background:{bg};display:flex;flex-direction:column;overflow:hidden">'
             f'<div style="padding-top:80px">{headline_html(spec, text, accent, spec.get("headline_size", 84))}</div>'
             f'{grid}{band(C[bandc], "wordmark-chalk.png")}</div>')
