@@ -616,7 +616,10 @@
   "brand": "House of Noa",
   "listing_title": "House of Noa Tumbling Play Mat, Foldable Foam, Non-Toxic Wipeable",
   "image": "assets/products/tumbling-mat.png",
-  "colors": [],
+  "colors": [
+   "sage green checker",
+   "cream"
+  ],
   "lists": [
    "infant-classroom"
   ],
@@ -626,8 +629,24 @@
   ],
   "listing_age": null,
   "product_url": null,
-  "note": "Mapped from Ellie's checkered foldable mat image",
-  "lifestyle": []
+  "note": "Ellie confirmed lifestyle photos are the House of Noa checkered mat (green checker). Cut-out on file is a beige checker; confirm which colorway the list links to",
+  "lifestyle": [
+   {
+    "file": "assets/lifestyle/tumbling-mat/tumbling-mat-01.jpg",
+    "description": "Baby on tummy pushing up on the green checkered mat, cropped at the shoulders; no face",
+    "faces": false
+   },
+   {
+    "file": "assets/lifestyle/tumbling-mat/tumbling-mat-02.jpg",
+    "description": "Outdoor play yard: green checkered mat inside a wooden gate with a ball run, sensory bottle and scarf; no children",
+    "faces": false
+   },
+   {
+    "file": "assets/lifestyle/tumbling-mat/tumbling-mat-03.jpg",
+    "description": "Overhead: three infants from behind exploring on the mat with silks, a board book and a truck; adult's knee in frame; no faces",
+    "faces": false
+   }
+  ]
  },
  {
   "id": "cloudsoft-mat",
