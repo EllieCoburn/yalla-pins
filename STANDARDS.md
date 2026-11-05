@@ -77,7 +77,7 @@ Then:
 
 Brand colors: Yalla Blue `#6065F2`, Ink `#292C45`, Chalk `#F7F5EF`, Paper `#FBFAF6`, Mist `#E7E5F1`, Ink Soft `#5A5D74`, Lilac `#C8B9DC`.
 Fonts: **Lora** (headlines; final clause in *italic*), **DM Sans** (eyebrows/small caps).
-Brand marks: real wordmark file only (never retyped), dotted sun as a general mark. Scalloped edges top Blue/Ink bands.
+Brand marks: real wordmark file only (never retyped). **The logo is never central.** No logo bands. On some Pins a tiny wordmark sits quietly in a bottom corner (`"mark": "small"`, ~64px wide, low opacity); on others there is no mark at all (`"mark": "none"`). Vary it across the day's set — roughly half with a small mark, half without. The scallop is used only as a soft edge on photo panels, never as a branded band.
 
 Layouts (render with `scripts/render_pin.py`):
 - **band-collage** — products floating on Chalk around a full-width scalloped Yalla Blue title band. Big guides (8–14 products).
@@ -90,6 +90,7 @@ Rules Ellie set:
 - **No small notes** on graphics (no tips, no "affiliate links" tags, no captions beyond product names in arches).
 - **Don't place similar-colored products side by side** (e.g. red/yellow dump truck next to the red/yellow Cozy Coupe).
 - 1000 × 1500 px, 2:3.
+- Headlines: the plain clause on one line, the italic clause on the next.
 - Every new Pin must be a **fresh design** — vary layout, product subset, headline and background (Chalk / Mist / Blue / Ink) so Pinterest treats it as new content.
 - Always look at the rendered PNG before uploading: no overlaps, no clipping, nothing touching the band or wordmark.
 

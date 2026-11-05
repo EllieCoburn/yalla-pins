@@ -48,13 +48,21 @@ def headline_html(spec, text, accent, size):
                f'color:{text};opacity:.8">{eb}</p>') if eb else ""
     return (f'<div style="display:flex;flex-direction:column;align-items:center;gap:14px;text-align:center;padding:0 70px">{eyebrow}'
             f'<h1 style="margin:0;font:400 {size}px/1.04 Lora;letter-spacing:-.015em;color:{text}">{h} '
-            f'<em style="font-style:italic;color:{accent}">{em}</em></h1></div>')
+            f'<em style="display:block;font-style:italic;color:{accent}">{em}</em></h1></div>')
 
 
-def band(color, word):
-    return (f'<div style="margin-top:auto;flex-shrink:0">{scallop(1000, color)}'
-            f'<div style="background:{color};height:150px;display:flex;align-items:center;justify-content:center">'
-            f'<img src="{a("assets/brand/" + word)}" style="height:58px"></div></div>')
+def foot(h=72):
+    return f'<div style="height:{h}px;flex-shrink:0"></div>'
+
+
+def mark(spec, dark):
+    """Tiny, quiet brand mark in a corner. spec["mark"]: "small" (default) | "none"; spec["mark_corner"]: "br" | "bl"."""
+    if spec.get("mark", "small") == "none":
+        return ""
+    word = "wordmark-chalk.png" if dark else "wordmark-blue.png"
+    side = "left" if spec.get("mark_corner", "br") == "bl" else "right"
+    return (f'<img src="{a("assets/brand/" + word)}" style="position:absolute;{side}:44px;bottom:36px;width:64px;'
+            f'opacity:{0.7 if dark else 0.55}">')
 
 
 def load_products():
@@ -84,12 +92,12 @@ def arches(spec, P):
                      f'<div style="flex:1;min-height:0;border-radius:{rad};background:{arch};'
                      f'display:flex;align-items:flex-end;justify-content:center;box-sizing:border-box;padding:{padtop}px 18px 20px">'
                      f'<img src="{a(p["image"])}" style="max-width:100%;max-height:100%;min-height:0;object-fit:contain"></div>{lab}</div>')
-    grid = (f'<div style="flex:1;min-height:0;padding:0 70px;margin:48px 0 44px;display:grid;'
+    grid = (f'<div style="flex:1;min-height:0;padding:0 70px;margin:56px 0 44px;display:grid;'
             f'grid-template-columns:repeat({cols},minmax(0,1fr));grid-template-rows:repeat({rows},minmax(0,1fr));'
             f'column-gap:40px;row-gap:{24 if n >= 6 else 30}px">{"".join(cells)}</div>')
-    return (f'<div style="width:1000px;height:1500px;background:{bg};display:flex;flex-direction:column;overflow:hidden">'
-            f'<div style="padding-top:80px">{headline_html(spec, text, accent, spec.get("headline_size", 84))}</div>'
-            f'{grid}{band(C[bandc], "wordmark-chalk.png")}</div>')
+    return (f'<div style="width:1000px;height:1500px;position:relative;background:{bg};display:flex;flex-direction:column;overflow:hidden">'
+            f'<div style="padding-top:90px">{headline_html(spec, text, accent, spec.get("headline_size", 84))}</div>'
+            f'{grid}{foot(40)}{mark(spec, text == C["chalk"])}</div>')
 
 
 def hero(spec, P):
@@ -97,30 +105,44 @@ def hero(spec, P):
     p = P[spec["products"][0]]
     lab = (f'<p style="margin:16px 0 0;font:400 34px/1.2 Lora;color:{text};text-align:center">{html.escape(p["name"])}</p>'
            if spec.get("labels", False) else "")
-    return (f'<div style="width:1000px;height:1500px;background:{bg};display:flex;flex-direction:column;overflow:hidden">'
-            f'<div style="padding-top:84px">{headline_html(spec, text, accent, spec.get("headline_size", 92))}</div>'
-            f'<div style="padding:0 120px;margin-top:56px"><div style="height:820px;border-radius:380px 380px 0 0;background:{arch};'
-            f'display:flex;align-items:flex-end;justify-content:center;box-sizing:border-box;padding:0 60px 60px">'
-            f'<img src="{a(p["image"])}" style="max-width:100%;max-height:640px;object-fit:contain"></div>{lab}</div>'
-            f'{band(C[bandc], "wordmark-chalk.png")}</div>')
+    return (f'<div style="width:1000px;height:1500px;position:relative;background:{bg};display:flex;flex-direction:column;overflow:hidden">'
+            f'<div style="padding-top:96px">{headline_html(spec, text, accent, spec.get("headline_size", 92))}</div>'
+            f'<div style="flex:1;min-height:0;display:flex;flex-direction:column;padding:0 110px;margin:64px 0 110px">'
+            f'<div style="flex:1;min-height:0;border-radius:400px 400px 0 0;background:{arch};'
+            f'display:flex;align-items:flex-end;justify-content:center;box-sizing:border-box;padding:160px 60px 70px">'
+            f'<img src="{a(p["image"])}" style="max-width:100%;max-height:100%;object-fit:contain"></div>{lab}</div>'
+            f'{mark(spec, text == C["chalk"])}</div>')
 
 
 def photo(spec, P):
-    """Lifestyle photo layout. spec: photo (repo path), photo_position (CSS object-position), background, frame ("full"|"arch")."""
-    bg, text, accent, arch, bandc = BG[spec.get("background", "chalk")]
+    """Lifestyle/room photo. spec: photo (repo path), photo_position (CSS object-position),
+    frame: "full" (photo on top, headline below) | "arch" (headline above, photo in a tall arch) |
+           "bleed" (photo fills the Pin, headline on a scalloped Chalk panel at the bottom)."""
+    bg, text, accent, arch, _ = BG[spec.get("background", "chalk")]
     src = a(spec["photo"])
     pos = spec.get("photo_position", "50% 50%")
-    if spec.get("frame", "full") == "arch":
-        img = (f'<div style="flex:1;min-height:0;padding:0 100px;margin:52px 0 48px;display:flex">'
-               f'<img src="{src}" style="flex:1;min-width:0;width:100%;height:100%;object-fit:cover;object-position:{pos};'
-               f'border-radius:400px 400px 0 0"></div>')
-        return (f'<div style="width:1000px;height:1500px;background:{bg};display:flex;flex-direction:column;overflow:hidden">'
-                f'<div style="padding-top:80px">{headline_html(spec, text, accent, spec.get("headline_size", 84))}</div>'
-                f'{img}{band(C[bandc], "wordmark-chalk.png")}</div>')
-    return (f'<div style="width:1000px;height:1500px;background:{bg};display:flex;flex-direction:column;overflow:hidden">'
-            f'<img src="{src}" style="width:1000px;height:{spec.get("photo_height", 930)}px;object-fit:cover;object-position:{pos};flex-shrink:0">'
-            f'<div style="padding-top:56px">{headline_html(spec, text, accent, spec.get("headline_size", 80))}</div>'
-            f'{band(C[bandc], "wordmark-chalk.png")}</div>')
+    frame = spec.get("frame", "full")
+    dark = text == C["chalk"]
+    if frame == "arch":
+        return (f'<div style="width:1000px;height:1500px;position:relative;background:{bg};display:flex;flex-direction:column;overflow:hidden">'
+                f'<div style="padding-top:90px">{headline_html(spec, text, accent, spec.get("headline_size", 84))}</div>'
+                f'<div style="flex:1;min-height:0;padding:0 90px;margin:60px 0 110px;display:flex">'
+                f'<img src="{src}" style="flex:1;min-width:0;width:100%;height:100%;object-fit:cover;object-position:{pos};'
+                f'border-radius:410px 410px 0 0"></div>{mark(spec, dark)}</div>')
+    if frame == "bleed":
+        ph = spec.get("panel_height", 360)
+        n = 25
+        d = "M0 12" + "a20 12 0 0 1 40 0" * n + f"V{ph + 12}H0Z"
+        return (f'<div style="width:1000px;height:1500px;position:relative;overflow:hidden;background:{bg}">'
+                f'<img src="{src}" style="position:absolute;inset:0;width:1000px;height:1500px;object-fit:cover;object-position:{pos}">'
+                f'<svg width="1000" height="{ph + 12}" viewBox="0 0 1000 {ph + 12}" style="position:absolute;left:0;bottom:0">'
+                f'<path fill="{bg}" d="{d}"/></svg>'
+                f'<div style="position:absolute;left:0;right:0;bottom:0;height:{ph}px;display:flex;align-items:center;justify-content:center;padding-bottom:20px;box-sizing:border-box">'
+                f'{headline_html(spec, text, accent, spec.get("headline_size", 76))}</div>{mark(spec, dark)}</div>')
+    return (f'<div style="width:1000px;height:1500px;position:relative;background:{bg};display:flex;flex-direction:column;overflow:hidden">'
+            f'<img src="{src}" style="width:1000px;height:{spec.get("photo_height", 1020)}px;object-fit:cover;object-position:{pos};flex-shrink:0">'
+            f'<div style="flex:1;display:flex;align-items:center;justify-content:center;padding-bottom:30px">'
+            f'{headline_html(spec, text, accent, spec.get("headline_size", 80))}</div>{mark(spec, dark)}</div>')
 
 
 def band_collage(spec, P):
@@ -139,8 +161,7 @@ def band_collage(spec, P):
             f'<img src="{a("assets/brand/sun-chalk.png")}" style="width:52px;height:52px">'
             f'<p style="margin:0;font:600 20px \'DM Sans\';letter-spacing:.22em;text-transform:uppercase">{html.escape(bt.get("eyebrow", ""))}</p>'
             f'<h1 style="margin:0;font:400 {bt.get("size", 112)}px/1 Lora;letter-spacing:-.015em">{html.escape(bt.get("big", ""))} '
-            f'<em>{html.escape(bt.get("big_em", ""))}</em></h1></div>{imgs}'
-            f'<img src="{a("assets/brand/wordmark-blue.png")}" style="position:absolute;left:430px;top:1380px;width:140px"></div>')
+            f'<em>{html.escape(bt.get("big_em", ""))}</em></h1></div>{imgs}{mark(spec, False)}</div>')
 
 
 def render(spec_path, out_path):
