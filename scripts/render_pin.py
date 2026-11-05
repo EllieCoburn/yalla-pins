@@ -145,6 +145,24 @@ def photo(spec, P):
             f'{headline_html(spec, text, accent, spec.get("headline_size", 80))}</div>{mark(spec, dark)}</div>')
 
 
+def story(spec, P):
+    """Lifestyle photo on top, headline, then a row of small arches with the products that make it possible.
+    spec: photo, photo_position, photo_height, products (2-4), background."""
+    bg, text, accent, arch, _ = BG[spec.get("background", "chalk")]
+    ids = spec["products"]
+    n = len(ids)
+    cells = "".join(
+        f'<div style="flex:1;min-width:0;height:100%;border-radius:200px 200px 0 0;background:{arch};display:flex;align-items:flex-end;'
+        f'justify-content:center;box-sizing:border-box;padding:{80 if n <= 3 else 64}px 14px 16px">'
+        f'<img src="{a(P[i]["image"])}" style="max-width:100%;max-height:100%;object-fit:contain"></div>' for i in ids)
+    return (f'<div style="width:1000px;height:1500px;position:relative;background:{bg};display:flex;flex-direction:column;overflow:hidden">'
+            f'<img src="{a(spec["photo"])}" style="width:1000px;height:{spec.get("photo_height", 720)}px;object-fit:cover;'
+            f'object-position:{spec.get("photo_position", "50% 50%")};flex-shrink:0">'
+            f'<div style="padding-top:52px">{headline_html(spec, text, accent, spec.get("headline_size", 76))}</div>'
+            f'<div style="flex:1;min-height:0;display:flex;gap:{28 if n <= 3 else 22}px;padding:0 60px;margin:44px 0 96px">{cells}</div>'
+            f'{mark(spec, text == C["chalk"])}</div>')
+
+
 def band_collage(spec, P):
     bt = spec["band_title"]
     top = spec.get("band_top", 612)
@@ -167,7 +185,7 @@ def band_collage(spec, P):
 def render(spec_path, out_path):
     spec = json.loads(Path(spec_path).read_text())
     P = load_products()
-    body = {"arches": arches, "hero": hero, "band-collage": band_collage, "photo": photo}[spec["layout"]](spec, P)
+    body = {"arches": arches, "hero": hero, "band-collage": band_collage, "photo": photo, "story": story}[spec["layout"]](spec, P)
     fonts = (f"@font-face{{font-family:Lora;src:url({a('assets/fonts/Lora.ttf')});font-style:normal;font-weight:400 700}}"
              f"@font-face{{font-family:Lora;src:url({a('assets/fonts/Lora-Italic.ttf')});font-style:italic;font-weight:400 700}}"
              f"@font-face{{font-family:'DM Sans';src:url({a('assets/fonts/DMSans.ttf')});font-weight:100 1000}}")
