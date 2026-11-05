@@ -13,6 +13,9 @@ Read **STANDARDS.md** before making any Pin.
 | `catalog/lists.json` | Amazon Storefront lists with exact tagged URLs |
 | `catalog/products.json` | Products with supplied cut-out images, listing ages, colors, themes |
 | `assets/products/` | Product cut-outs (supplied by Ellie only, never Amazon photos) |
+| `assets/originals/<product-id>.png` | Product images exactly as Ellie supplied them |
+| `assets/lifestyle/<product-id>/` | Lifestyle photos of each product in use, listed in that product's `lifestyle` field. No identifiable children unless Ellie confirms permission |
+| `assets/rooms/` | Room and environment photos not tied to one product (e.g. a whole infant room) |
 | `assets/brand/`, `assets/fonts/` | Yalla wordmark, sun mark, Lora + DM Sans (SIL OFL) |
 | `scripts/render_pin.py` | Renders a Pin spec (JSON) to a 1000×1500 PNG |
 | `specs/` | Every Pin's spec, named `YYYY-MM-DD-<slug>.json` |
