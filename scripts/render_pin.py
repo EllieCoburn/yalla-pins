@@ -67,7 +67,7 @@ def arches(spec, P):
     assert n in (2, 3, 4, 6), "arches layout takes 2, 3, 4 or 6 products"
     cols = 2
     rows = 2 if n == 3 else (n + 1) // 2
-    labels = spec.get("labels", True)
+    labels = spec.get("labels", False)
     radius = 210
     lab_size = 28 if n <= 4 else 26
     cells = []

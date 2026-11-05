@@ -38,6 +38,17 @@ Rules:
 - No emoji. No ALL CAPS shouting.
 - Program names from the brand guide are not used on Pinterest Pins unless Ellie asks.
 
+## 3b. Organic selling (the heart of the brand)
+
+Yalla sells the way a trusted educator recommends: by showing a beautiful, intentional idea first, and letting the product be the natural way to bring it to life. Most Pins are ideas, not ads.
+
+- **Lead with the idea, the moment or the feeling,** never the product. Headlines speak to what happens for the child or the caregiver ("Diapering, as a moment of connection"), not what's for sale ("Changing table essentials").
+- **The product is the quiet answer,** named in the description as part of the idea, not listed like a catalog.
+- **Graphics carry no product labels by default.** The image shows it; the alt text and description name it. Labels only on clearly shopping-style Pins (e.g. a gift guide with many items), and even then never counts ("Small wicker baskets", never "Small wicker baskets (6)") or sizes.
+- **Descriptions open with a thought or a practice,** then show how the materials support it, then the disclosure. They read like advice from an infant teacher, not a product listing.
+- **Mix:** most Pins are idea-led with products woven in; a minority are clearly sales-like (gift guides, "our infant room essentials"). Never two sales-like Pins in a row in a day's set.
+- Shopping words ("must-have", "essentials", "shop", "buy", "deal") stay out of headlines on idea-led Pins.
+
 ## 4. Keywords & metadata (maximise discovery)
 
 For every Pin, before writing, identify:
