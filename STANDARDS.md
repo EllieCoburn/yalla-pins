@@ -83,7 +83,7 @@ Rules Ellie set:
 
 ## 7. Cadence
 
-- Target: **7 Pins per day**, every day.
+- Target: **7 Pins per day**, every day, spread across Ellie's niche lists (see §9). Not only gift guides.
 - Mix: aim for no more than 3 Pins to the same destination URL per day; rotate boards; mix layouts. While the catalog has only one or two lists, more Pins may share a URL, but each must be a clearly different design, product subset and search angle (never near-duplicates).
 - Products with `"hold": true` in `catalog/products.json` are not used in new Pins until Ellie confirms the image matches the listing.
 - Products whose `listing_age` falls outside a Pin's stated age range are left out of that Pin.
@@ -100,5 +100,24 @@ Rules Ellie set:
 | Toddler materials | Toddler Provocations |
 | Open-ended materials / loose parts | Materials |
 | Learning environments / furniture | Reggio Classroom Design |
+| Infant room setup, layout, essentials | Reggio Classroom Design or Classroom Ideas |
+| Infant materials (mirrors, baskets, mats) | Infant Provocations or Materials |
 
 Create no new boards without Ellie's approval.
+
+## 9. Lists, niches & the daily mix
+
+Each Amazon list is a niche with its own audience. `catalog/lists.json` holds, per list: `niche` (who it serves), `search_angles` (gaps in Pinterest search to fill), `boards`, `daily_target` (Pins per day) and optional `active_until`.
+
+Daily mix:
+- Split the 7 daily Pins across active lists by `daily_target` (a list past `active_until` is inactive).
+- A list can only get Pins for products that have an image and no `hold`. If a list can't support its target with genuinely fresh designs, give its slots to other lists and tell Ellie what's needed.
+- Every Pin targets one `search_angle` (or a closely related phrase) as its main keyword. Over days, cover all angles of each list before repeating one, so Yalla fills many gaps in search rather than competing with itself.
+- Write for that list's audience. Gift Pins speak to parents and gift-givers; infant classroom Pins speak to infant room teachers, center directors and home daycare providers.
+
+### Infant classroom list — specifics
+- Audience: infant teachers, educarers, directors, family/home daycare providers, people opening a program.
+- Search terms people actually use ("infant classroom", "daycare infant room", "infant room setup") belong in titles, descriptions and alt text even though Yalla's own word is "learning environment"; graphic headlines can use Yalla's language.
+- Angles: natural / neutral infant room; Reggio Emilia-inspired infant room; Montessori-style infant room; movement & tummy time area (mats, mirror with bar, mirror cubbies); diapering station (changing table, wall organizer); rest area (daycare cribs); feeding (low chairs); low open shelves and natural-material baskets; home daycare infant setup; setting up a new infant room checklist.
+- Never claim a product meets licensing or safety regulations. Licensing rules vary by state: when relevant, say "check your state's licensing requirements". Describe crib/changing-table features only as the listing states them.
+- Real photos of a calm, natural infant room (no children, or only with permission and never in this public repo) outperform product collages for "infant classroom setup" searches — ask Ellie for them.

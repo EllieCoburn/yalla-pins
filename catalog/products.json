@@ -51,7 +51,8 @@
    "rainbow felt"
   ],
   "lists": [
-   "holiday-12-24"
+   "holiday-12-24",
+   "infant-classroom"
   ],
   "themes": [
    "sensory",
@@ -292,5 +293,376 @@
   ],
   "listing_age": null,
   "product_url": null
+ },
+ {
+  "id": "daycare-crib-serenity",
+  "name": "Compact daycare crib",
+  "brand": "Foundations",
+  "listing_title": "Foundations Serenity Compact Clearview Fixed Side Daycare Crib, Natural, with 3\" foam mattress",
+  "image": null,
+  "colors": [],
+  "lists": [
+   "infant-classroom"
+  ],
+  "themes": [
+   "sleep",
+   "furniture"
+  ],
+  "listing_age": null,
+  "product_url": null,
+  "hold": true,
+  "note": "Needs a cut-out image from Ellie"
+ },
+ {
+  "id": "changing-table",
+  "name": "Daycare changing table",
+  "brand": "Foundations",
+  "listing_title": "Foundations SafeSwing Daycare Changing Table, Natural, 2 shelves, changing pad",
+  "image": null,
+  "colors": [],
+  "lists": [
+   "infant-classroom"
+  ],
+  "themes": [
+   "diapering",
+   "furniture"
+  ],
+  "listing_age": null,
+  "product_url": null,
+  "hold": true,
+  "note": "Needs a cut-out image from Ellie"
+ },
+ {
+  "id": "diaper-organizer",
+  "name": "Wall diaper organizer",
+  "brand": "Foundations",
+  "listing_title": "Foundations Wall-Mounted Diaper Organizer for Daycares, Natural, 3 large + 8 small compartments",
+  "image": null,
+  "colors": [],
+  "lists": [
+   "infant-classroom"
+  ],
+  "themes": [
+   "diapering",
+   "storage"
+  ],
+  "listing_age": null,
+  "product_url": null,
+  "hold": true,
+  "note": "Needs a cut-out image from Ellie"
+ },
+ {
+  "id": "changing-set",
+  "name": "Changing table + wall organizer set",
+  "brand": "Foundations",
+  "listing_title": "Foundations SafeSwing Daycare Changing Table & Wall Organizer, 2-Piece Set",
+  "image": null,
+  "colors": [],
+  "lists": [
+   "infant-classroom"
+  ],
+  "themes": [
+   "diapering",
+   "furniture"
+  ],
+  "listing_age": null,
+  "product_url": null,
+  "hold": true,
+  "note": "Needs a cut-out image from Ellie"
+ },
+ {
+  "id": "mirror-cubbies",
+  "name": "Mirror-back toy cubbies",
+  "brand": "Bolocon",
+  "listing_title": "Bolocon Montessori Baby Toy Storage Cubbies with Mirror Back for Tummy Time, 3-compartment with handrails",
+  "image": null,
+  "colors": [],
+  "lists": [
+   "infant-classroom"
+  ],
+  "themes": [
+   "storage",
+   "movement",
+   "mirror",
+   "montessori"
+  ],
+  "listing_age": null,
+  "product_url": null,
+  "hold": true,
+  "note": "Needs a cut-out image from Ellie"
+ },
+ {
+  "id": "book-display",
+  "name": "4-shelf book display",
+  "brand": "ECR4Kids",
+  "listing_title": "ECR4Kids 4-Shelf Toddler Book Display, Wooden, 30in, Natural, GREENGUARD Gold",
+  "image": null,
+  "colors": [],
+  "lists": [
+   "infant-classroom"
+  ],
+  "themes": [
+   "books",
+   "furniture"
+  ],
+  "listing_age": null,
+  "product_url": null,
+  "hold": true,
+  "note": "Needs a cut-out image from Ellie"
+ },
+ {
+  "id": "cubby-cabinet",
+  "name": "Cubby tray cabinet",
+  "brand": "ECR4Kids",
+  "listing_title": "ECR4Kids 5+5 Cubby Mobile Tray Cabinet with Bins, Natural",
+  "image": null,
+  "colors": [],
+  "lists": [
+   "infant-classroom"
+  ],
+  "themes": [
+   "storage",
+   "furniture"
+  ],
+  "listing_age": null,
+  "product_url": null,
+  "hold": true,
+  "note": "Needs a cut-out image from Ellie"
+ },
+ {
+  "id": "feeding-chairs-9",
+  "name": "Low wood feeding chairs (9\")",
+  "brand": "Foundations",
+  "listing_title": "Foundations Simple Sitter Low 9\" Wood Feeding Chairs, 2 Pack",
+  "image": null,
+  "colors": [],
+  "lists": [
+   "infant-classroom"
+  ],
+  "themes": [
+   "feeding",
+   "furniture"
+  ],
+  "listing_age": null,
+  "product_url": null,
+  "hold": true,
+  "note": "Needs a cut-out image from Ellie"
+ },
+ {
+  "id": "feeding-chairs-7",
+  "name": "Low wood feeding chairs (7\")",
+  "brand": "Foundations",
+  "listing_title": "Foundations Easy Serve Low 7\" Wood Feeding Chairs, 2 Pack",
+  "image": null,
+  "colors": [],
+  "lists": [
+   "infant-classroom"
+  ],
+  "themes": [
+   "feeding",
+   "furniture"
+  ],
+  "listing_age": null,
+  "product_url": null,
+  "hold": true,
+  "note": "Needs a cut-out image from Ellie"
+ },
+ {
+  "id": "rattan-bread-baskets",
+  "name": "Rattan bread baskets (set of 3)",
+  "brand": "XALVYNQ",
+  "listing_title": "XALVYNQ Rattan Bread Basket Set 3, Handwoven, Honey Brown",
+  "image": null,
+  "colors": [],
+  "lists": [
+   "infant-classroom"
+  ],
+  "themes": [
+   "baskets",
+   "natural materials",
+   "storage"
+  ],
+  "listing_age": null,
+  "product_url": null,
+  "hold": true,
+  "note": "Needs a cut-out image from Ellie"
+ },
+ {
+  "id": "rattan-stackable-baskets",
+  "name": "Stackable rattan baskets",
+  "brand": "unknown",
+  "listing_title": "Rattan Bread Baskets Round Woven Fruit Bowls Stackable for Storage",
+  "image": null,
+  "colors": [],
+  "lists": [
+   "infant-classroom"
+  ],
+  "themes": [
+   "baskets",
+   "natural materials",
+   "storage"
+  ],
+  "listing_age": null,
+  "product_url": null,
+  "hold": true,
+  "note": "Needs a cut-out image from Ellie"
+ },
+ {
+  "id": "wicker-key-baskets",
+  "name": "Small wicker baskets (6)",
+  "brand": "Hushee",
+  "listing_title": "Hushee 6 Pcs Small Wicker Key Basket, Brown, Round",
+  "image": null,
+  "colors": [],
+  "lists": [
+   "infant-classroom"
+  ],
+  "themes": [
+   "baskets",
+   "natural materials",
+   "storage"
+  ],
+  "listing_age": null,
+  "product_url": null,
+  "hold": true,
+  "note": "Needs a cut-out image from Ellie"
+ },
+ {
+  "id": "rattan-round-baskets",
+  "name": "Rattan round baskets (2)",
+  "brand": "chicapica",
+  "listing_title": "chicapica 2-Pack 7.5\" Rattan Round Key Baskets",
+  "image": null,
+  "colors": [],
+  "lists": [
+   "infant-classroom"
+  ],
+  "themes": [
+   "baskets",
+   "natural materials"
+  ],
+  "listing_age": null,
+  "product_url": null,
+  "hold": true,
+  "note": "Needs a cut-out image from Ellie"
+ },
+ {
+  "id": "daycare-crib-evac",
+  "name": "Evacuation daycare crib",
+  "brand": "Foundations",
+  "listing_title": "Foundations First Responder Evacuation Fixed-Side Daycare Crib, Natural, Clearview",
+  "image": null,
+  "colors": [],
+  "lists": [
+   "infant-classroom"
+  ],
+  "themes": [
+   "sleep",
+   "furniture",
+   "safety"
+  ],
+  "listing_age": null,
+  "product_url": null,
+  "hold": true,
+  "note": "Needs a cut-out image from Ellie"
+ },
+ {
+  "id": "foam-play-mat",
+  "name": "Thick foam play mat",
+  "brand": "PaPaMat",
+  "listing_title": "PaPaMat 1.3\" Thick Baby Play Mat, 50x50 Foam Tummy Time Mat",
+  "image": null,
+  "colors": [],
+  "lists": [
+   "infant-classroom"
+  ],
+  "themes": [
+   "movement",
+   "tummy time",
+   "floor"
+  ],
+  "listing_age": null,
+  "product_url": null,
+  "hold": true,
+  "note": "Needs a cut-out image from Ellie"
+ },
+ {
+  "id": "tumbling-mat",
+  "name": "Foldable tumbling mat",
+  "brand": "House of Noa",
+  "listing_title": "House of Noa Tumbling Play Mat, Foldable Foam, Non-Toxic Wipeable",
+  "image": null,
+  "colors": [],
+  "lists": [
+   "infant-classroom"
+  ],
+  "themes": [
+   "movement",
+   "floor"
+  ],
+  "listing_age": null,
+  "product_url": null,
+  "hold": true,
+  "note": "Needs a cut-out image from Ellie"
+ },
+ {
+  "id": "cloudsoft-mat",
+  "name": "CloudSoft play mat",
+  "brand": "Hakuna Matte",
+  "listing_title": "Hakuna Matte CloudSoft Baby Play Mat 60x80, Brown, OEKO-TEX",
+  "image": null,
+  "colors": [],
+  "lists": [
+   "infant-classroom"
+  ],
+  "themes": [
+   "movement",
+   "tummy time",
+   "floor",
+   "natural"
+  ],
+  "listing_age": null,
+  "product_url": null,
+  "hold": true,
+  "note": "Needs a cut-out image from Ellie"
+ },
+ {
+  "id": "mirror-with-bar",
+  "name": "Mirror with pull-up bar",
+  "brand": "Guidewill",
+  "listing_title": "Guidewill Commercial-Grade Montessori Mirror with Bar, 100% Birch",
+  "image": null,
+  "colors": [],
+  "lists": [
+   "infant-classroom"
+  ],
+  "themes": [
+   "mirror",
+   "movement",
+   "montessori"
+  ],
+  "listing_age": null,
+  "product_url": null,
+  "hold": true,
+  "note": "Needs a cut-out image from Ellie"
+ },
+ {
+  "id": "mirror-tiles",
+  "name": "Unbreakable mirror tiles",
+  "brand": "NKJVE",
+  "listing_title": "NKJVE Unbreakable Mirror Tiles Self Adhesive, 4 x 8in",
+  "image": null,
+  "colors": [],
+  "lists": [
+   "infant-classroom"
+  ],
+  "themes": [
+   "mirror",
+   "sensory"
+  ],
+  "listing_age": null,
+  "product_url": null,
+  "hold": true,
+  "note": "Needs a cut-out image from Ellie"
  }
 ]

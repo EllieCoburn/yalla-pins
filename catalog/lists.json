@@ -1,11 +1,61 @@
 [
-  {
-    "id": "holiday-12-24",
-    "name": "12-24 Month Holiday Gift Guide",
-    "storefront_tagline": "Playful furniture and sensory toys for your little ones",
-    "url": "https://www.amazon.com/shop/yallachildcare/list/2RHGG3U1XV7ZL?ref_=hype_hm_sf_e&tag=nataliemart0f-20&originMarketplaceId=ATVPDKIKX0DER",
-    "age_range": "12-24 months",
-    "season": "holiday",
-    "product_count": 16
-  }
+ {
+  "id": "holiday-12-24",
+  "name": "12-24 Month Holiday Gift Guide",
+  "storefront_tagline": "Playful furniture and sensory toys for your little ones",
+  "url": "https://www.amazon.com/shop/yallachildcare/list/2RHGG3U1XV7ZL?ref_=hype_hm_sf_e&tag=nataliemart0f-20&originMarketplaceId=ATVPDKIKX0DER",
+  "age_range": "12-24 months",
+  "season": "holiday",
+  "product_count": 16,
+  "niche": "Holiday gifts for 12–24 month olds (parents, grandparents, gift-givers)",
+  "daily_target": 4,
+  "active_until": "2026-12-20",
+  "boards": [
+   "Gift Guides for Intentional Play"
+  ],
+  "search_angles": [
+   "gifts for 1 year old",
+   "toddler christmas gifts",
+   "first birthday gift ideas",
+   "stocking stuffers for toddlers",
+   "wooden toys for toddlers",
+   "non-plastic toddler gifts",
+   "montessori toys for 1 year old",
+   "gross motor toys for toddlers",
+   "gifts for grandkids toddler"
+  ]
+ },
+ {
+  "id": "infant-classroom",
+  "name": "Infant Classroom Setup & Essentials",
+  "storefront_tagline": "A collection of furniture, play materials, and everyday supplies for setting up a thoughtful infant classroom, with space for movement, exploration, and connection.",
+  "url": "https://www.amazon.com/shop/yallachildcare/list/PGKXS06OT2RD?ref_=aip_sf_list_spv_ons_mixed_d&tag=nataliemart0f-20&originMarketplaceId=ATVPDKIKX0DER",
+  "age_range": "0-18 months",
+  "season": "evergreen",
+  "product_count": 20,
+  "daily_target": 3,
+  "niche": "Infant group care settings: center infant rooms and home daycares (directors, infant teachers, family childcare providers, people opening a daycare)",
+  "boards": [
+   "Reggio Classroom Design",
+   "Infant Provocations",
+   "Classroom Ideas",
+   "Materials"
+  ],
+  "search_angles": [
+   "infant classroom setup",
+   "infant room daycare ideas",
+   "natural infant classroom",
+   "reggio emilia inspired infant classroom",
+   "montessori infant room",
+   "home daycare infant room setup",
+   "infant room essentials daycare",
+   "neutral daycare classroom",
+   "tummy time area daycare",
+   "diaper changing station daycare",
+   "daycare nap room cribs",
+   "low shelves infant classroom",
+   "starting a home daycare",
+   "infant classroom on a budget"
+  ]
+ }
 ]
