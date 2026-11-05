@@ -473,8 +473,29 @@
   ],
   "listing_age": null,
   "product_url": null,
-  "note": "Mapped from Ellie's 2-chair image (white trays); Ellie to confirm this is the Easy Serve 7\"",
-  "lifestyle": []
+  "note": "Ellie confirmed these lifestyle photos are the Foundations meal chair; white trays match the Easy Serve 7\" listing",
+  "lifestyle": [
+   {
+    "file": "assets/lifestyle/feeding-chairs-7/feeding-chairs-7-01.jpg",
+    "description": "Three toddlers side by side at snack, cropped below the face; wide, landscape",
+    "faces": false
+   },
+   {
+    "file": "assets/lifestyle/feeding-chairs-7/feeding-chairs-7-02.jpg",
+    "description": "Child at the tray with a yellow divided plate (toast, strawberries, yogurt); torso and hands, no face",
+    "faces": false
+   },
+   {
+    "file": "assets/lifestyle/feeding-chairs-7/feeding-chairs-7-03.jpg",
+    "description": "Overhead view of the tray with pasta, broccoli and blueberries; hands only",
+    "faces": false
+   },
+   {
+    "file": "assets/lifestyle/feeding-chairs-7/feeding-chairs-7-04.jpg",
+    "description": "Baby seen from behind in the chair, natural light, wooden shelf with baskets behind",
+    "faces": false
+   }
+  ]
  },
  {
   "id": "rattan-bread-baskets",
