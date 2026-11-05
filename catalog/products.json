@@ -1,16 +1,296 @@
 [
-  {"id": "nugget", "name": "Nugget play couch", "brand": "Nugget", "listing_title": "Nugget - The Original Play Couch for Kids - Modular Foam Children's Sofa (Surfside)", "image": "assets/products/nugget.png", "colors": ["light blue"], "lists": ["holiday-12-24"], "themes": ["movement", "furniture", "open-ended"], "listing_age": null, "product_url": null},
-  {"id": "balance-bike", "name": "Balance bike", "brand": "SEREED", "listing_title": "SEREED Baby Balance Bike for 1 Year Old, 12-24 Months Toddler Bike, 4 Silent Wheels, Green", "image": "assets/products/balance-bike.png", "colors": ["sage", "cream", "tan"], "lists": ["holiday-12-24"], "themes": ["movement", "first birthday"], "listing_age": "12-24 months", "product_url": null},
-  {"id": "mirror-center", "name": "Mirror activity center", "brand": "MEKA", "listing_title": "MEKA 5-in-1 Triangle Mirror Activity Center, Solid Pine Play Station", "image": "assets/products/mirror-center.png", "colors": ["natural wood", "rainbow felt"], "lists": ["holiday-12-24"], "themes": ["sensory", "furniture", "wooden"], "listing_age": null, "product_url": null},
-  {"id": "stapelstein", "name": "Stapelstein stepping stones", "brand": "Stapelstein", "listing_title": "Stapelstein Rainbow Stepping Stones + Balance Board, 6 motor skills toys, from 1 year", "image": "assets/products/stapelstein.png", "colors": ["rainbow"], "lists": ["holiday-12-24"], "themes": ["movement", "open-ended"], "listing_age": "1 year+", "product_url": null},
-  {"id": "learning-tower", "name": "Learning tower", "brand": "Avenlur", "listing_title": "Avenlur Toddler Tower, Date 4-in-1 Kitchen & Learning Tower (Green)", "image": "assets/products/learning-tower.png", "colors": ["sage green", "black"], "lists": ["holiday-12-24"], "themes": ["independence", "furniture", "montessori"], "listing_age": null, "product_url": null, "note": "Ellie to confirm the supplied image is the Avenlur Date tower in the list"},
-  {"id": "cozy-coupe", "name": "Cozy Coupe", "brand": "Little Tikes", "listing_title": "Little Tikes Cozy Coupe 30th Anniversary Car", "image": "assets/products/cozy-coupe.png", "colors": ["red", "yellow"], "lists": ["holiday-12-24"], "themes": ["movement", "classic", "pretend play"], "listing_age": null, "product_url": null},
-  {"id": "silks", "name": "Play silks", "brand": "Sarah's Silks", "listing_title": "Sarah's Silks Set of 6 Primary Playsilks, 100% Silk Scarves for Kids and Toddlers", "image": "assets/products/silks.png", "colors": ["rainbow"], "lists": ["holiday-12-24"], "themes": ["sensory", "open-ended", "pretend play", "stocking stuffer", "waldorf"], "listing_age": null, "product_url": null},
-  {"id": "pikler", "name": "Pikler climbing set", "brand": "Avenlur", "listing_title": "Avenlur 5-in-1 Pikler Triangle Set - Hazel, Ages 2-7", "image": "assets/products/pikler.png", "colors": ["natural wood"], "lists": ["holiday-12-24"], "themes": ["movement", "wooden", "montessori"], "listing_age": "2-7 years", "product_url": null, "note": "Listing says ages 2-7: do not feature in Pins framed for under-2s"},
-  {"id": "dump-truck", "name": "Dump truck", "brand": "Green Toys", "listing_title": "Green Toys Dump Truck - Toddler Vehicle", "image": "assets/products/dump-truck.png", "colors": ["red", "yellow"], "lists": ["holiday-12-24"], "themes": ["pretend play", "outdoor", "stocking stuffer"], "listing_age": null, "product_url": null},
-  {"id": "stacking-cups", "name": "Stacking cups", "brand": "mushie", "listing_title": "mushie Stacking Cups Toy, Made in Denmark, Ages 10+ Months", "image": "assets/products/stacking-cups.png", "colors": ["muted rainbow"], "lists": ["holiday-12-24"], "themes": ["open-ended", "stocking stuffer", "bath", "sensory"], "listing_age": "10 months+", "product_url": null},
-  {"id": "ball-drop", "name": "Ball drop", "brand": "Montessori & Me", "listing_title": "Montessori Ball Tracker Wooden Ball Drop, First Birthday Gift 18 Months", "image": "assets/products/ball-drop.png", "colors": ["natural wood", "pastel"], "lists": ["holiday-12-24"], "themes": ["wooden", "montessori", "cause and effect"], "listing_age": "18 months", "product_url": null},
-  {"id": "stacking-rocks", "name": "Jumbo stacking rocks", "brand": "OESSUF", "listing_title": "OESSUF Extra-Large Stacking Rocks for Toddlers 1-3, 16 PCS Wooden Balancing Stones", "image": "assets/products/stacking-rocks.png", "colors": ["rainbow"], "lists": ["holiday-12-24"], "themes": ["wooden", "open-ended", "sensory"], "listing_age": "1-3 years", "product_url": null},
-  {"id": "bilibo", "name": "Bilibo", "brand": "Fat Brain Toys / MOLUK", "listing_title": "Fat Brain Toys bilibo Midi by MOLUK Open-Ended Creative Play Toy, Mint", "image": "assets/products/bilibo.png", "colors": ["yellow"], "lists": ["holiday-12-24"], "themes": ["movement", "open-ended", "sensory"], "listing_age": null, "product_url": null, "note": "Listing is the Mint Midi; supplied image is yellow. Ellie to confirm or send mint image"},
-  {"id": "egg-shakers", "name": "Wooden egg shakers", "brand": "MGTECH", "listing_title": "Wood Egg Shakers Set, Musical Percussion Instruments, Natural Finish", "image": "assets/products/egg-shakers.png", "colors": ["natural wood"], "lists": ["holiday-12-24"], "themes": ["music", "sensory", "wooden", "stocking stuffer"], "listing_age": null, "product_url": null}
+ {
+  "id": "nugget",
+  "name": "Nugget play couch",
+  "brand": "Nugget",
+  "listing_title": "Nugget - The Original Play Couch for Kids - Modular Foam Children's Sofa (Surfside)",
+  "image": "assets/products/nugget.png",
+  "colors": [
+   "light blue"
+  ],
+  "lists": [
+   "holiday-12-24"
+  ],
+  "themes": [
+   "movement",
+   "furniture",
+   "open-ended"
+  ],
+  "listing_age": null,
+  "product_url": null
+ },
+ {
+  "id": "balance-bike",
+  "name": "Balance bike",
+  "brand": "SEREED",
+  "listing_title": "SEREED Baby Balance Bike for 1 Year Old, 12-24 Months Toddler Bike, 4 Silent Wheels, Green",
+  "image": "assets/products/balance-bike.png",
+  "colors": [
+   "sage",
+   "cream",
+   "tan"
+  ],
+  "lists": [
+   "holiday-12-24"
+  ],
+  "themes": [
+   "movement",
+   "first birthday"
+  ],
+  "listing_age": "12-24 months",
+  "product_url": null
+ },
+ {
+  "id": "mirror-center",
+  "name": "Mirror activity center",
+  "brand": "MEKA",
+  "listing_title": "MEKA 5-in-1 Triangle Mirror Activity Center, Solid Pine Play Station",
+  "image": "assets/products/mirror-center.png",
+  "colors": [
+   "natural wood",
+   "rainbow felt"
+  ],
+  "lists": [
+   "holiday-12-24"
+  ],
+  "themes": [
+   "sensory",
+   "furniture",
+   "wooden"
+  ],
+  "listing_age": null,
+  "product_url": null
+ },
+ {
+  "id": "stapelstein",
+  "name": "Stapelstein stepping stones",
+  "brand": "Stapelstein",
+  "listing_title": "Stapelstein Rainbow Stepping Stones + Balance Board, 6 motor skills toys, from 1 year",
+  "image": "assets/products/stapelstein.png",
+  "colors": [
+   "rainbow"
+  ],
+  "lists": [
+   "holiday-12-24"
+  ],
+  "themes": [
+   "movement",
+   "open-ended"
+  ],
+  "listing_age": "1 year+",
+  "product_url": null
+ },
+ {
+  "id": "learning-tower",
+  "name": "Learning tower",
+  "brand": "Avenlur",
+  "listing_title": "Avenlur Toddler Tower, Date 4-in-1 Kitchen & Learning Tower (Green)",
+  "image": "assets/products/learning-tower.png",
+  "colors": [
+   "sage green",
+   "black"
+  ],
+  "lists": [
+   "holiday-12-24"
+  ],
+  "themes": [
+   "independence",
+   "furniture",
+   "montessori"
+  ],
+  "listing_age": null,
+  "product_url": null,
+  "note": "Ellie to confirm the supplied image is the Avenlur Date tower in the list",
+  "hold": true
+ },
+ {
+  "id": "cozy-coupe",
+  "name": "Cozy Coupe",
+  "brand": "Little Tikes",
+  "listing_title": "Little Tikes Cozy Coupe 30th Anniversary Car",
+  "image": "assets/products/cozy-coupe.png",
+  "colors": [
+   "red",
+   "yellow"
+  ],
+  "lists": [
+   "holiday-12-24"
+  ],
+  "themes": [
+   "movement",
+   "classic",
+   "pretend play"
+  ],
+  "listing_age": null,
+  "product_url": null
+ },
+ {
+  "id": "silks",
+  "name": "Play silks",
+  "brand": "Sarah's Silks",
+  "listing_title": "Sarah's Silks Set of 6 Primary Playsilks, 100% Silk Scarves for Kids and Toddlers",
+  "image": "assets/products/silks.png",
+  "colors": [
+   "rainbow"
+  ],
+  "lists": [
+   "holiday-12-24"
+  ],
+  "themes": [
+   "sensory",
+   "open-ended",
+   "pretend play",
+   "stocking stuffer",
+   "waldorf"
+  ],
+  "listing_age": null,
+  "product_url": null
+ },
+ {
+  "id": "pikler",
+  "name": "Pikler climbing set",
+  "brand": "Avenlur",
+  "listing_title": "Avenlur 5-in-1 Pikler Triangle Set - Hazel, Ages 2-7",
+  "image": "assets/products/pikler.png",
+  "colors": [
+   "natural wood"
+  ],
+  "lists": [
+   "holiday-12-24"
+  ],
+  "themes": [
+   "movement",
+   "wooden",
+   "montessori"
+  ],
+  "listing_age": "2-7 years",
+  "product_url": null,
+  "note": "Listing says ages 2-7: do not feature in Pins framed for under-2s"
+ },
+ {
+  "id": "dump-truck",
+  "name": "Dump truck",
+  "brand": "Green Toys",
+  "listing_title": "Green Toys Dump Truck - Toddler Vehicle",
+  "image": "assets/products/dump-truck.png",
+  "colors": [
+   "red",
+   "yellow"
+  ],
+  "lists": [
+   "holiday-12-24"
+  ],
+  "themes": [
+   "pretend play",
+   "outdoor",
+   "stocking stuffer"
+  ],
+  "listing_age": null,
+  "product_url": null
+ },
+ {
+  "id": "stacking-cups",
+  "name": "Stacking cups",
+  "brand": "mushie",
+  "listing_title": "mushie Stacking Cups Toy, Made in Denmark, Ages 10+ Months",
+  "image": "assets/products/stacking-cups.png",
+  "colors": [
+   "muted rainbow"
+  ],
+  "lists": [
+   "holiday-12-24"
+  ],
+  "themes": [
+   "open-ended",
+   "stocking stuffer",
+   "bath",
+   "sensory"
+  ],
+  "listing_age": "10 months+",
+  "product_url": null
+ },
+ {
+  "id": "ball-drop",
+  "name": "Ball drop",
+  "brand": "Montessori & Me",
+  "listing_title": "Montessori Ball Tracker Wooden Ball Drop, First Birthday Gift 18 Months",
+  "image": "assets/products/ball-drop.png",
+  "colors": [
+   "natural wood",
+   "pastel"
+  ],
+  "lists": [
+   "holiday-12-24"
+  ],
+  "themes": [
+   "wooden",
+   "montessori",
+   "cause and effect"
+  ],
+  "listing_age": "18 months",
+  "product_url": null
+ },
+ {
+  "id": "stacking-rocks",
+  "name": "Jumbo stacking rocks",
+  "brand": "OESSUF",
+  "listing_title": "OESSUF Extra-Large Stacking Rocks for Toddlers 1-3, 16 PCS Wooden Balancing Stones",
+  "image": "assets/products/stacking-rocks.png",
+  "colors": [
+   "rainbow"
+  ],
+  "lists": [
+   "holiday-12-24"
+  ],
+  "themes": [
+   "wooden",
+   "open-ended",
+   "sensory"
+  ],
+  "listing_age": "1-3 years",
+  "product_url": null
+ },
+ {
+  "id": "bilibo",
+  "name": "Bilibo",
+  "brand": "Fat Brain Toys / MOLUK",
+  "listing_title": "Fat Brain Toys bilibo Midi by MOLUK Open-Ended Creative Play Toy, Mint",
+  "image": "assets/products/bilibo.png",
+  "colors": [
+   "yellow"
+  ],
+  "lists": [
+   "holiday-12-24"
+  ],
+  "themes": [
+   "movement",
+   "open-ended",
+   "sensory"
+  ],
+  "listing_age": null,
+  "product_url": null,
+  "note": "Listing is the Mint Midi; supplied image is yellow. Ellie to confirm or send mint image",
+  "hold": true
+ },
+ {
+  "id": "egg-shakers",
+  "name": "Wooden egg shakers",
+  "brand": "MGTECH",
+  "listing_title": "Wood Egg Shakers Set, Musical Percussion Instruments, Natural Finish",
+  "image": "assets/products/egg-shakers.png",
+  "colors": [
+   "natural wood"
+  ],
+  "lists": [
+   "holiday-12-24"
+  ],
+  "themes": [
+   "music",
+   "sensory",
+   "wooden",
+   "stocking stuffer"
+  ],
+  "listing_age": null,
+  "product_url": null
+ }
 ]

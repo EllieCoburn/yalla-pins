@@ -84,7 +84,9 @@ Rules Ellie set:
 ## 7. Cadence
 
 - Target: **7 Pins per day**, every day.
-- Mix: no more than 3 Pins to the same destination URL per day; rotate boards; mix layouts.
+- Mix: aim for no more than 3 Pins to the same destination URL per day; rotate boards; mix layouts. While the catalog has only one or two lists, more Pins may share a URL, but each must be a clearly different design, product subset and search angle (never near-duplicates).
+- Products with `"hold": true` in `catalog/products.json` are not used in new Pins until Ellie confirms the image matches the listing.
+- Products whose `listing_age` falls outside a Pin's stated age range are left out of that Pin.
 - Order of priority while holiday searches peak (Nov–mid Dec): holiday gift guides by age, themed gift sets (movement, sensory, wooden, "gifts that aren't plastic", stocking stuffers), then single-product heroes.
 
 ## 8. Board map
