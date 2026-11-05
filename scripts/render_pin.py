@@ -4,7 +4,8 @@
 Usage:  python3 scripts/render_pin.py specs/my-pin.json pins/<folder>/<name>.png
 
 Spec fields
-  layout      "arches" | "hero" | "band-collage"
+  layout      "arches" | "hero" | "band-collage" | "photo"
+  photo       photo layout: repo path of a lifestyle/room photo; photo_position, frame "full"|"arch"
   eyebrow     small caps line, e.g. "Holiday gift guide · 12–24 months"
   headline    plain part of the Lora headline, e.g. "Gifts that get them"
   headline_em italic final clause, e.g. "moving."
@@ -104,6 +105,24 @@ def hero(spec, P):
             f'{band(C[bandc], "wordmark-chalk.png")}</div>')
 
 
+def photo(spec, P):
+    """Lifestyle photo layout. spec: photo (repo path), photo_position (CSS object-position), background, frame ("full"|"arch")."""
+    bg, text, accent, arch, bandc = BG[spec.get("background", "chalk")]
+    src = a(spec["photo"])
+    pos = spec.get("photo_position", "50% 50%")
+    if spec.get("frame", "full") == "arch":
+        img = (f'<div style="flex:1;min-height:0;padding:0 100px;margin:52px 0 48px;display:flex">'
+               f'<img src="{src}" style="flex:1;min-width:0;width:100%;height:100%;object-fit:cover;object-position:{pos};'
+               f'border-radius:400px 400px 0 0"></div>')
+        return (f'<div style="width:1000px;height:1500px;background:{bg};display:flex;flex-direction:column;overflow:hidden">'
+                f'<div style="padding-top:80px">{headline_html(spec, text, accent, spec.get("headline_size", 84))}</div>'
+                f'{img}{band(C[bandc], "wordmark-chalk.png")}</div>')
+    return (f'<div style="width:1000px;height:1500px;background:{bg};display:flex;flex-direction:column;overflow:hidden">'
+            f'<img src="{src}" style="width:1000px;height:{spec.get("photo_height", 930)}px;object-fit:cover;object-position:{pos};flex-shrink:0">'
+            f'<div style="padding-top:56px">{headline_html(spec, text, accent, spec.get("headline_size", 80))}</div>'
+            f'{band(C[bandc], "wordmark-chalk.png")}</div>')
+
+
 def band_collage(spec, P):
     bt = spec["band_title"]
     top = spec.get("band_top", 612)
@@ -127,7 +146,7 @@ def band_collage(spec, P):
 def render(spec_path, out_path):
     spec = json.loads(Path(spec_path).read_text())
     P = load_products()
-    body = {"arches": arches, "hero": hero, "band-collage": band_collage}[spec["layout"]](spec, P)
+    body = {"arches": arches, "hero": hero, "band-collage": band_collage, "photo": photo}[spec["layout"]](spec, P)
     fonts = (f"@font-face{{font-family:Lora;src:url({a('assets/fonts/Lora.ttf')});font-style:normal;font-weight:400 700}}"
              f"@font-face{{font-family:Lora;src:url({a('assets/fonts/Lora-Italic.ttf')});font-style:italic;font-weight:400 700}}"
              f"@font-face{{font-family:'DM Sans';src:url({a('assets/fonts/DMSans.ttf')});font-weight:100 1000}}")

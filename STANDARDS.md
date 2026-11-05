@@ -83,6 +83,7 @@ Layouts (render with `scripts/render_pin.py`):
 - **band-collage** — products floating on Chalk around a full-width scalloped Yalla Blue title band. Big guides (8–14 products).
 - **arches** — 2/4/6 products in Mist arches, Lora headline, Blue scallop band with wordmark. Themed sets.
 - **hero** — one product large in an arch, headline above. Single-product Pins.
+- **photo** — a lifestyle or room photo, full-bleed on top (`frame: full`) or inside a tall arch (`frame: arch`), headline below/above. Use these as often as the library allows: real moments sell organically better than cut-outs. Lifestyle photos live in `assets/lifestyle/<product-id>/` and are listed in each product's `lifestyle` field; a photo Pin links to the list containing that product, and its description names the product as part of the moment. Never crop to reveal a face that the original avoided.
 
 Rules Ellie set:
 - **Image-centric.** Products are the hero; text is a short title only.
