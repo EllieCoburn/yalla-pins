@@ -13,7 +13,8 @@ Honesty note: no copy guarantees virality. We maximise the odds: usefulness, sea
 
 ## 2. Workflow (non-negotiable)
 
-- Claude builds Pins and saves them to **Buffer as drafts only**. Never `shareNow`, never queue, never schedule.
+- Claude builds Pins and saves them to **Buffer as drafts only**. Never `shareNow`, never `addToQueue`, never `shareNext`.
+- **Every draft carries its own planned date and time** (`mode: customScheduled` with `dueAt`, plus `saveToDraft: true`), chosen by the spacing rules in §7a. That way, when Ellie approves a draft, it goes out on its planned day, never back to back with similar Pins. Tell Ellie to approve drafts with **Schedule** (keeping the planned time), not "Add to Queue".
 - Ellie reviews, tweaks and approves each draft in Buffer.
 - Every Pin made is logged in `log/pins.jsonl`.
 
@@ -116,6 +117,19 @@ Rules Ellie set:
 - Products with `"hold": true` in `catalog/products.json` are not used in new Pins until Ellie confirms the image matches the listing.
 - Products whose `listing_age` falls outside a Pin's stated age range are left out of that Pin.
 - Seasonal timing: in Nov–mid Dec, gift guides by age and themed gift ideas are timely for the gift-guide slots; framing stays need-first ("what will they actually play with?").
+
+## 7a. Spacing & the calendar
+
+The calendar is `log/pins.jsonl` (every Pin has `topic` and `planned_for`) plus the drafts and scheduled posts in Buffer (`list_posts` with status draft/scheduled). Before planning, read both, and plan new Pins into the open days ahead, up to 4 weeks out.
+
+- **Same topic** (e.g. tummy time, diapering, mealtimes, a given gift guide): at most **once every 7 days**.
+- **Same photo**: at most once every 21 days. **Same product as a featured item**: at most once every 5 days.
+- **Same destination URL**: at most 2 Pins per day, never consecutive.
+- **Same board**: at most 2 Pins per day.
+- **Per day**: up to 7 Pins, a mix of topics and both kinds (no-purchase / product-supported), never two of the same kind back to back.
+- **Times**: spread across the day between about 7:00 am and 10:00 pm Pacific, at irregular minutes (e.g. 7:41, 10:13, 12:52, 15:27, 18:06, 19:48, 21:19), at least 90 minutes apart.
+- **Seasonal Pins** are dated inside their window (gift guides before ~Dec 20); evergreen Pins fill the rest.
+- If today's Pins can't fit the next 4 weeks without breaking these rules, make fewer and say why.
 
 ## 8. Board map
 
