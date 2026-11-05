@@ -222,7 +222,8 @@ def render(spec_path, out_path):
              f"@font-face{{font-family:Lora;src:url({a('assets/fonts/Lora-Italic.ttf')});font-style:italic;font-weight:400 700}}"
              f"@font-face{{font-family:'DM Sans';src:url({a('assets/fonts/DMSans.ttf')});font-weight:100 1000}}")
     page = f'<!doctype html><html><head><meta charset="utf-8"><style>{fonts}body{{margin:0}}</style></head><body>{body}</body></html>'
-    tmp = Path(out_path).with_suffix(".html")
+    out_path = Path(out_path).resolve()
+    tmp = out_path.with_suffix(".html")
     tmp.parent.mkdir(parents=True, exist_ok=True)
     tmp.write_text(page)
     from playwright.sync_api import sync_playwright
