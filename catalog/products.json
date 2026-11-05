@@ -335,7 +335,7 @@
   "name": "Wall diaper organizer",
   "brand": "Foundations",
   "listing_title": "Foundations Wall-Mounted Diaper Organizer for Daycares, Natural, 3 large + 8 small compartments",
-  "image": null,
+  "image": "assets/products/diaper-organizer.png",
   "colors": [],
   "lists": [
    "infant-classroom"
@@ -345,9 +345,7 @@
    "storage"
   ],
   "listing_age": null,
-  "product_url": null,
-  "hold": true,
-  "note": "Needs a cut-out image from Ellie"
+  "product_url": null
  },
  {
   "id": "changing-set",
@@ -478,7 +476,7 @@
   "name": "Stackable rattan baskets",
   "brand": "unknown",
   "listing_title": "Rattan Bread Baskets Round Woven Fruit Bowls Stackable for Storage",
-  "image": null,
+  "image": "assets/products/rattan-stackable-baskets.png",
   "colors": [],
   "lists": [
    "infant-classroom"
@@ -489,9 +487,7 @@
    "storage"
   ],
   "listing_age": null,
-  "product_url": null,
-  "hold": true,
-  "note": "Needs a cut-out image from Ellie"
+  "product_url": null
  },
  {
   "id": "wicker-key-baskets",
@@ -516,7 +512,7 @@
   "name": "Rattan round baskets (2)",
   "brand": "chicapica",
   "listing_title": "chicapica 2-Pack 7.5\" Rattan Round Key Baskets",
-  "image": null,
+  "image": "assets/products/rattan-round-baskets.png",
   "colors": [],
   "lists": [
    "infant-classroom"
@@ -526,9 +522,7 @@
    "natural materials"
   ],
   "listing_age": null,
-  "product_url": null,
-  "hold": true,
-  "note": "Needs a cut-out image from Ellie"
+  "product_url": null
  },
  {
   "id": "daycare-crib-evac",
@@ -553,7 +547,7 @@
   "name": "Thick foam play mat",
   "brand": "PaPaMat",
   "listing_title": "PaPaMat 1.3\" Thick Baby Play Mat, 50x50 Foam Tummy Time Mat",
-  "image": null,
+  "image": "assets/products/foam-play-mat.png",
   "colors": [],
   "lists": [
    "infant-classroom"
@@ -564,9 +558,7 @@
    "floor"
   ],
   "listing_age": null,
-  "product_url": null,
-  "hold": true,
-  "note": "Needs a cut-out image from Ellie"
+  "product_url": null
  },
  {
   "id": "tumbling-mat",
@@ -630,7 +622,7 @@
   "name": "Unbreakable mirror tiles",
   "brand": "NKJVE",
   "listing_title": "NKJVE Unbreakable Mirror Tiles Self Adhesive, 4 x 8in",
-  "image": null,
+  "image": "assets/products/mirror-tiles.png",
   "colors": [],
   "lists": [
    "infant-classroom"
@@ -640,8 +632,6 @@
    "sensory"
   ],
   "listing_age": null,
-  "product_url": null,
-  "hold": true,
-  "note": "Needs a cut-out image from Ellie"
+  "product_url": null
  }
 ]
