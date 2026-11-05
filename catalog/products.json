@@ -318,7 +318,7 @@
   "name": "Daycare changing table",
   "brand": "Foundations",
   "listing_title": "Foundations SafeSwing Daycare Changing Table, Natural, 2 shelves, changing pad",
-  "image": null,
+  "image": "assets/products/changing-table.png",
   "colors": [],
   "lists": [
    "infant-classroom"
@@ -328,9 +328,7 @@
    "furniture"
   ],
   "listing_age": null,
-  "product_url": null,
-  "hold": true,
-  "note": "Needs a cut-out image from Ellie"
+  "product_url": null
  },
  {
   "id": "diaper-organizer",
@@ -356,7 +354,7 @@
   "name": "Changing table + wall organizer set",
   "brand": "Foundations",
   "listing_title": "Foundations SafeSwing Daycare Changing Table & Wall Organizer, 2-Piece Set",
-  "image": null,
+  "image": "assets/products/changing-set.png",
   "colors": [],
   "lists": [
    "infant-classroom"
@@ -366,16 +364,14 @@
    "furniture"
   ],
   "listing_age": null,
-  "product_url": null,
-  "hold": true,
-  "note": "Needs a cut-out image from Ellie"
+  "product_url": null
  },
  {
   "id": "mirror-cubbies",
   "name": "Mirror-back toy cubbies",
   "brand": "Bolocon",
   "listing_title": "Bolocon Montessori Baby Toy Storage Cubbies with Mirror Back for Tummy Time, 3-compartment with handrails",
-  "image": null,
+  "image": "assets/products/mirror-cubbies.png",
   "colors": [],
   "lists": [
    "infant-classroom"
@@ -387,16 +383,14 @@
    "montessori"
   ],
   "listing_age": null,
-  "product_url": null,
-  "hold": true,
-  "note": "Needs a cut-out image from Ellie"
+  "product_url": null
  },
  {
   "id": "book-display",
   "name": "4-shelf book display",
   "brand": "ECR4Kids",
   "listing_title": "ECR4Kids 4-Shelf Toddler Book Display, Wooden, 30in, Natural, GREENGUARD Gold",
-  "image": null,
+  "image": "assets/products/book-display.png",
   "colors": [],
   "lists": [
    "infant-classroom"
@@ -406,16 +400,14 @@
    "furniture"
   ],
   "listing_age": null,
-  "product_url": null,
-  "hold": true,
-  "note": "Needs a cut-out image from Ellie"
+  "product_url": null
  },
  {
   "id": "cubby-cabinet",
   "name": "Cubby tray cabinet",
   "brand": "ECR4Kids",
   "listing_title": "ECR4Kids 5+5 Cubby Mobile Tray Cabinet with Bins, Natural",
-  "image": null,
+  "image": "assets/products/cubby-cabinet.png",
   "colors": [],
   "lists": [
    "infant-classroom"
@@ -425,16 +417,14 @@
    "furniture"
   ],
   "listing_age": null,
-  "product_url": null,
-  "hold": true,
-  "note": "Needs a cut-out image from Ellie"
+  "product_url": null
  },
  {
   "id": "feeding-chairs-9",
   "name": "Low wood feeding chairs (9\")",
   "brand": "Foundations",
   "listing_title": "Foundations Simple Sitter Low 9\" Wood Feeding Chairs, 2 Pack",
-  "image": null,
+  "image": "assets/products/feeding-chairs-9.png",
   "colors": [],
   "lists": [
    "infant-classroom"
@@ -445,15 +435,14 @@
   ],
   "listing_age": null,
   "product_url": null,
-  "hold": true,
-  "note": "Needs a cut-out image from Ellie"
+  "note": "Mapped from Ellie's single-chair image (natural tray); Ellie to confirm this is the Simple Sitter 9\""
  },
  {
   "id": "feeding-chairs-7",
   "name": "Low wood feeding chairs (7\")",
   "brand": "Foundations",
   "listing_title": "Foundations Easy Serve Low 7\" Wood Feeding Chairs, 2 Pack",
-  "image": null,
+  "image": "assets/products/feeding-chairs-7.png",
   "colors": [],
   "lists": [
    "infant-classroom"
@@ -464,15 +453,14 @@
   ],
   "listing_age": null,
   "product_url": null,
-  "hold": true,
-  "note": "Needs a cut-out image from Ellie"
+  "note": "Mapped from Ellie's 2-chair image (white trays); Ellie to confirm this is the Easy Serve 7\""
  },
  {
   "id": "rattan-bread-baskets",
   "name": "Rattan bread baskets (set of 3)",
   "brand": "XALVYNQ",
   "listing_title": "XALVYNQ Rattan Bread Basket Set 3, Handwoven, Honey Brown",
-  "image": null,
+  "image": "assets/products/rattan-bread-baskets.png",
   "colors": [],
   "lists": [
    "infant-classroom"
@@ -483,9 +471,7 @@
    "storage"
   ],
   "listing_age": null,
-  "product_url": null,
-  "hold": true,
-  "note": "Needs a cut-out image from Ellie"
+  "product_url": null
  },
  {
   "id": "rattan-stackable-baskets",
@@ -512,7 +498,7 @@
   "name": "Small wicker baskets (6)",
   "brand": "Hushee",
   "listing_title": "Hushee 6 Pcs Small Wicker Key Basket, Brown, Round",
-  "image": null,
+  "image": "assets/products/wicker-key-baskets.png",
   "colors": [],
   "lists": [
    "infant-classroom"
@@ -523,9 +509,7 @@
    "storage"
   ],
   "listing_age": null,
-  "product_url": null,
-  "hold": true,
-  "note": "Needs a cut-out image from Ellie"
+  "product_url": null
  },
  {
   "id": "rattan-round-baskets",
@@ -551,7 +535,7 @@
   "name": "Evacuation daycare crib",
   "brand": "Foundations",
   "listing_title": "Foundations First Responder Evacuation Fixed-Side Daycare Crib, Natural, Clearview",
-  "image": null,
+  "image": "assets/products/daycare-crib-evac.png",
   "colors": [],
   "lists": [
    "infant-classroom"
@@ -562,9 +546,7 @@
    "safety"
   ],
   "listing_age": null,
-  "product_url": null,
-  "hold": true,
-  "note": "Needs a cut-out image from Ellie"
+  "product_url": null
  },
  {
   "id": "foam-play-mat",
@@ -591,7 +573,7 @@
   "name": "Foldable tumbling mat",
   "brand": "House of Noa",
   "listing_title": "House of Noa Tumbling Play Mat, Foldable Foam, Non-Toxic Wipeable",
-  "image": null,
+  "image": "assets/products/tumbling-mat.png",
   "colors": [],
   "lists": [
    "infant-classroom"
@@ -602,15 +584,14 @@
   ],
   "listing_age": null,
   "product_url": null,
-  "hold": true,
-  "note": "Needs a cut-out image from Ellie"
+  "note": "Mapped from Ellie's checkered foldable mat image"
  },
  {
   "id": "cloudsoft-mat",
   "name": "CloudSoft play mat",
   "brand": "Hakuna Matte",
   "listing_title": "Hakuna Matte CloudSoft Baby Play Mat 60x80, Brown, OEKO-TEX",
-  "image": null,
+  "image": "assets/products/cloudsoft-mat.png",
   "colors": [],
   "lists": [
    "infant-classroom"
@@ -623,15 +604,14 @@
   ],
   "listing_age": null,
   "product_url": null,
-  "hold": true,
-  "note": "Needs a cut-out image from Ellie"
+  "note": "Listing color is Brown; supplied image is rose-brown — Ellie to confirm"
  },
  {
   "id": "mirror-with-bar",
   "name": "Mirror with pull-up bar",
   "brand": "Guidewill",
   "listing_title": "Guidewill Commercial-Grade Montessori Mirror with Bar, 100% Birch",
-  "image": null,
+  "image": "assets/products/mirror-with-bar.png",
   "colors": [],
   "lists": [
    "infant-classroom"
@@ -643,8 +623,7 @@
   ],
   "listing_age": null,
   "product_url": null,
-  "hold": true,
-  "note": "Needs a cut-out image from Ellie"
+  "note": "Supplied image shows a Guidecraft label; list title reads Guidewill — Ellie to confirm"
  },
  {
   "id": "mirror-tiles",
