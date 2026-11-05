@@ -18,7 +18,8 @@
   ],
   "listing_age": null,
   "product_url": null,
-  "lifestyle": []
+  "lifestyle": [],
+  "firsthand": null
  },
  {
   "id": "balance-bike",
@@ -40,7 +41,8 @@
   ],
   "listing_age": "12-24 months",
   "product_url": null,
-  "lifestyle": []
+  "lifestyle": [],
+  "firsthand": null
  },
  {
   "id": "mirror-center",
@@ -63,7 +65,8 @@
   ],
   "listing_age": null,
   "product_url": null,
-  "lifestyle": []
+  "lifestyle": [],
+  "firsthand": null
  },
  {
   "id": "stapelstein",
@@ -83,7 +86,8 @@
   ],
   "listing_age": "1 year+",
   "product_url": null,
-  "lifestyle": []
+  "lifestyle": [],
+  "firsthand": null
  },
  {
   "id": "learning-tower",
@@ -107,7 +111,8 @@
   "product_url": null,
   "note": "Ellie to confirm the supplied image is the Avenlur Date tower in the list",
   "hold": true,
-  "lifestyle": []
+  "lifestyle": [],
+  "firsthand": null
  },
  {
   "id": "cozy-coupe",
@@ -129,7 +134,8 @@
   ],
   "listing_age": null,
   "product_url": null,
-  "lifestyle": []
+  "lifestyle": [],
+  "firsthand": null
  },
  {
   "id": "silks",
@@ -152,7 +158,8 @@
   ],
   "listing_age": null,
   "product_url": null,
-  "lifestyle": []
+  "lifestyle": [],
+  "firsthand": null
  },
  {
   "id": "pikler",
@@ -174,7 +181,8 @@
   "listing_age": "2-7 years",
   "product_url": null,
   "note": "Listing says ages 2-7: do not feature in Pins framed for under-2s",
-  "lifestyle": []
+  "lifestyle": [],
+  "firsthand": null
  },
  {
   "id": "dump-truck",
@@ -196,7 +204,8 @@
   ],
   "listing_age": null,
   "product_url": null,
-  "lifestyle": []
+  "lifestyle": [],
+  "firsthand": null
  },
  {
   "id": "stacking-cups",
@@ -218,7 +227,8 @@
   ],
   "listing_age": "10 months+",
   "product_url": null,
-  "lifestyle": []
+  "lifestyle": [],
+  "firsthand": null
  },
  {
   "id": "ball-drop",
@@ -240,7 +250,8 @@
   ],
   "listing_age": "18 months",
   "product_url": null,
-  "lifestyle": []
+  "lifestyle": [],
+  "firsthand": null
  },
  {
   "id": "stacking-rocks",
@@ -261,7 +272,8 @@
   ],
   "listing_age": "1-3 years",
   "product_url": null,
-  "lifestyle": []
+  "lifestyle": [],
+  "firsthand": null
  },
  {
   "id": "bilibo",
@@ -284,7 +296,8 @@
   "product_url": null,
   "note": "Listing is the Mint Midi; supplied image is yellow. Ellie to confirm or send mint image",
   "hold": true,
-  "lifestyle": []
+  "lifestyle": [],
+  "firsthand": null
  },
  {
   "id": "egg-shakers",
@@ -306,7 +319,8 @@
   ],
   "listing_age": null,
   "product_url": null,
-  "lifestyle": []
+  "lifestyle": [],
+  "firsthand": null
  },
  {
   "id": "daycare-crib-serenity",
@@ -326,7 +340,8 @@
   "product_url": null,
   "hold": true,
   "note": "Needs a cut-out image from Ellie",
-  "lifestyle": []
+  "lifestyle": [],
+  "firsthand": null
  },
  {
   "id": "changing-table",
@@ -344,7 +359,8 @@
   ],
   "listing_age": null,
   "product_url": null,
-  "lifestyle": []
+  "lifestyle": [],
+  "firsthand": null
  },
  {
   "id": "diaper-organizer",
@@ -362,7 +378,8 @@
   ],
   "listing_age": null,
   "product_url": null,
-  "lifestyle": []
+  "lifestyle": [],
+  "firsthand": null
  },
  {
   "id": "changing-set",
@@ -380,7 +397,8 @@
   ],
   "listing_age": null,
   "product_url": null,
-  "lifestyle": []
+  "lifestyle": [],
+  "firsthand": null
  },
  {
   "id": "mirror-cubbies",
@@ -400,7 +418,8 @@
   ],
   "listing_age": null,
   "product_url": null,
-  "lifestyle": []
+  "lifestyle": [],
+  "firsthand": null
  },
  {
   "id": "book-display",
@@ -418,7 +437,8 @@
   ],
   "listing_age": null,
   "product_url": null,
-  "lifestyle": []
+  "lifestyle": [],
+  "firsthand": null
  },
  {
   "id": "cubby-cabinet",
@@ -436,7 +456,8 @@
   ],
   "listing_age": null,
   "product_url": null,
-  "lifestyle": []
+  "lifestyle": [],
+  "firsthand": null
  },
  {
   "id": "feeding-chairs-9",
@@ -455,7 +476,8 @@
   "listing_age": null,
   "product_url": null,
   "note": "Mapped from Ellie's single-chair image (natural tray); Ellie to confirm this is the Simple Sitter 9\"",
-  "lifestyle": []
+  "lifestyle": [],
+  "firsthand": null
  },
  {
   "id": "feeding-chairs-7",
@@ -495,7 +517,8 @@
     "description": "Baby seen from behind in the chair, natural light, wooden shelf with baskets behind",
     "faces": false
    }
-  ]
+  ],
+  "firsthand": null
  },
  {
   "id": "rattan-bread-baskets",
@@ -514,7 +537,8 @@
   ],
   "listing_age": null,
   "product_url": null,
-  "lifestyle": []
+  "lifestyle": [],
+  "firsthand": null
  },
  {
   "id": "rattan-stackable-baskets",
@@ -533,7 +557,8 @@
   ],
   "listing_age": null,
   "product_url": null,
-  "lifestyle": []
+  "lifestyle": [],
+  "firsthand": null
  },
  {
   "id": "wicker-key-baskets",
@@ -552,7 +577,8 @@
   ],
   "listing_age": null,
   "product_url": null,
-  "lifestyle": []
+  "lifestyle": [],
+  "firsthand": null
  },
  {
   "id": "rattan-round-baskets",
@@ -570,7 +596,8 @@
   ],
   "listing_age": null,
   "product_url": null,
-  "lifestyle": []
+  "lifestyle": [],
+  "firsthand": null
  },
  {
   "id": "daycare-crib-evac",
@@ -589,7 +616,8 @@
   ],
   "listing_age": null,
   "product_url": null,
-  "lifestyle": []
+  "lifestyle": [],
+  "firsthand": null
  },
  {
   "id": "foam-play-mat",
@@ -608,7 +636,8 @@
   ],
   "listing_age": null,
   "product_url": null,
-  "lifestyle": []
+  "lifestyle": [],
+  "firsthand": null
  },
  {
   "id": "tumbling-mat",
@@ -646,7 +675,8 @@
     "description": "Overhead: three infants from behind exploring on the mat with silks, a board book and a truck; adult's knee in frame; no faces",
     "faces": false
    }
-  ]
+  ],
+  "firsthand": null
  },
  {
   "id": "cloudsoft-mat",
@@ -667,7 +697,8 @@
   "listing_age": null,
   "product_url": null,
   "note": "Listing color is Brown; supplied image is rose-brown — Ellie to confirm",
-  "lifestyle": []
+  "lifestyle": [],
+  "firsthand": null
  },
  {
   "id": "mirror-with-bar",
@@ -687,7 +718,8 @@
   "listing_age": null,
   "product_url": null,
   "note": "Supplied image shows a Guidecraft label; list title reads Guidewill — Ellie to confirm",
-  "lifestyle": []
+  "lifestyle": [],
+  "firsthand": null
  },
  {
   "id": "mirror-tiles",
@@ -705,6 +737,7 @@
   ],
   "listing_age": null,
   "product_url": null,
-  "lifestyle": []
+  "lifestyle": [],
+  "firsthand": null
  }
 ]

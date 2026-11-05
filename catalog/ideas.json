@@ -1,0 +1,98 @@
+[
+ {
+  "id": "kitchen-treasure-basket",
+  "audience": "parents of babies 6–12 months",
+  "need": "What can my baby explore that we already own?",
+  "angle": "treasure basket with kitchen items",
+  "search": "treasure basket ideas for babies",
+  "photo_needed": "a basket of whisk, wooden spoons, measuring cups, lids on a rug"
+ },
+ {
+  "id": "loose-parts-shelf-at-home",
+  "audience": "parents of toddlers, home daycare providers",
+  "need": "How do I set up a shelf that invites play instead of a toy bin?",
+  "angle": "few materials, low shelf, rotation",
+  "search": "toddler shelf setup / toy rotation ideas",
+  "photo_needed": "a low shelf with 4–6 trays/baskets of materials"
+ },
+ {
+  "id": "toy-rotation",
+  "audience": "parents of toddlers",
+  "need": "There are toys everywhere and my child plays with none of them",
+  "angle": "rotate fewer materials",
+  "search": "toy rotation for toddlers",
+  "photo_needed": "before/after of a play area"
+ },
+ {
+  "id": "floor-play-space-baby",
+  "audience": "parents of babies",
+  "need": "Where should my baby play?",
+  "angle": "a soft, safe floor space with room to move",
+  "search": "baby play space ideas",
+  "photo_needed": "a calm floor area with mat and a few objects"
+ },
+ {
+  "id": "invitation-with-what-you-have",
+  "audience": "parents and educators",
+  "need": "How do I set up a play invitation without buying anything?",
+  "angle": "three materials, one tray",
+  "search": "play invitations for toddlers",
+  "photo_needed": "a tray with natural objects"
+ },
+ {
+  "id": "process-art-setup",
+  "audience": "parents, preschool teachers",
+  "need": "How do I let my child paint without it becoming chaos?",
+  "angle": "a manageable selection of materials",
+  "search": "process art for toddlers",
+  "photo_needed": "paint, paper taped low, child painting from behind"
+ },
+ {
+  "id": "respectful-diapering",
+  "audience": "infant teachers, parents",
+  "need": "How can diapering feel less rushed?",
+  "angle": "slow down, narrate, invite participation",
+  "search": "respectful caregiving diaper change",
+  "photo_needed": "a calm changing area"
+ },
+ {
+  "id": "mealtime-independence",
+  "audience": "parents, infant/toddler teachers",
+  "need": "How do I let my toddler be more independent at meals?",
+  "angle": "low seating, small pitchers, real tools",
+  "search": "toddler self feeding / montessori mealtime",
+  "photo_needed": "meal chair lifestyle photos (have)"
+ },
+ {
+  "id": "observing-play",
+  "audience": "parents and educators",
+  "need": "What should I notice while my child plays?",
+  "angle": "observation prompts",
+  "search": "how to observe toddler play",
+  "photo_needed": "child engaged with materials, from behind"
+ },
+ {
+  "id": "transitions",
+  "audience": "toddler teachers, parents",
+  "need": "How do I make transitions easier?",
+  "angle": "warnings, songs, predictable rhythm",
+  "search": "toddler transition tips",
+  "photo_needed": "a calm moment between activities"
+ },
+ {
+  "id": "outdoor-infant-space",
+  "audience": "infant teachers, home daycares",
+  "need": "How do I bring babies outside safely and simply?",
+  "angle": "a defined outdoor floor space",
+  "search": "outdoor play space for infants daycare",
+  "photo_needed": "outdoor play yard mat photo (have)"
+ },
+ {
+  "id": "natural-infant-room-arrangement",
+  "audience": "infant teachers, directors",
+  "need": "How should I arrange an infant room?",
+  "angle": "zones: move, rest, eat, care",
+  "search": "infant classroom layout",
+  "photo_needed": "wide shot of an infant room, no children"
+ }
+]

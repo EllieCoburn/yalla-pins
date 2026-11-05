@@ -1,14 +1,15 @@
 # Yalla Pinterest — Pin Standards
 
 The rulebook for every Pin made for **Yalla | Play & Childhood** (pinterest.com/yallachildcare).
-Every Pin, every run, follows this document. When in doubt, follow this file over habit.
+**Read BRAND.md first.** It is the purpose behind these rules and wins any conflict. Every Pin, every run, follows both.
 
 ## 1. The goal of every Pin
 
-1. **Be found and saved on Pinterest.** Pinterest is a visual search engine. A Pin spreads when its image stops the scroll and its words match what people are searching for at that moment.
-2. **Drive clicks to Ellie's Amazon affiliate lists and products.** Every Pin links to a real, tagged Amazon Storefront list or product.
+1. **Be genuinely useful**: answer a real need, question or experience of a parent or early childhood educator, so Yalla becomes a trusted resource for understanding play and creating spaces for children.
+2. **Be found and saved on Pinterest.** Pinterest is a visual search engine. A Pin spreads when its image stops the scroll and its words match what people are searching for at that moment.
+3. **Let affiliate income grow from that trust.** Product-supported Pins link to a real, tagged Amazon Storefront list or product. No-purchase Pins link to a Yalla resource page when one exists, or have no link.
 
-Honesty note: no copy guarantees virality. We maximise the odds: search-matched keywords, strong seasonal timing, scroll-stopping images, fresh Pin designs.
+Honesty note: no copy guarantees virality. We maximise the odds: usefulness, search-matched keywords, strong seasonal timing, beautiful photography, fresh Pin designs.
 
 ## 2. Workflow (non-negotiable)
 
@@ -38,16 +39,25 @@ Rules:
 - No emoji. No ALL CAPS shouting.
 - Program names from the brand guide are not used on Pinterest Pins unless Ellie asks.
 
-## 3b. Organic selling (the heart of the brand)
+## 3b. How a Pin is built: need → answer → product
 
-Yalla sells the way a trusted educator recommends: by showing a beautiful, intentional idea first, and letting the product be the natural way to bring it to life. Most Pins are ideas, not ads.
+Every Pin follows BRAND.md's structure:
+1. **Start with a need, question or experience** ("How do I set up a comfortable floor-play space for a baby?", "What can my toddler do with a basket of kitchen things?"). The headline speaks to that moment, not to a product.
+2. **Answer it with clear, specific guidance** in the description: what to do, how, and why it helps. Concrete examples ("children might fill, dump, sort and line them up").
+3. **Introduce a product only when it meaningfully supports the answer.** Then, in the description, say:
+   - **who it's useful for**,
+   - **how to use it**,
+   - **why we chose it**.
+4. **Firsthand experience:** if the product's `firsthand` field in `catalog/products.json` has Ellie's note, use it specifically ("In our infant room, we…"). If it is empty, describe the product from its listing and our reasoning, and never imply Yalla has used it. Never write "we love", "our favorite" or "we use" without a `firsthand` note.
 
-- **Lead with the idea, the moment or the feeling,** never the product. Headlines speak to what happens for the child or the caregiver ("Diapering, as a moment of connection"), not what's for sale ("Changing table essentials").
-- **The product is the quiet answer,** named in the description as part of the idea, not listed like a catalog.
-- **Graphics carry no product labels by default.** The image shows it; the alt text and description name it. Labels only on clearly shopping-style Pins (e.g. a gift guide with many items), and even then never counts ("Small wicker baskets", never "Small wicker baskets (6)") or sizes.
-- **Descriptions open with a thought or a practice,** then show how the materials support it, then the disclosure. They read like advice from an infant teacher, not a product listing.
-- **Mix:** most Pins are idea-led with products woven in; a minority are clearly sales-like (gift guides, "our infant room essentials"). Never two sales-like Pins in a row in a day's set.
-- Shopping words ("must-have", "essentials", "shop", "buy", "deal") stay out of headlines on idea-led Pins.
+Two kinds of Pin:
+- **No-purchase Pins**: room arrangements, invitations with materials families already have, observations about child development, caregiving tips, simpler routines. No affiliate link, no disclosure; destination = a Yalla resource page if one exists (`catalog/destinations.json`), otherwise none. Topics come from `catalog/ideas.json`.
+- **Product-supported Pins**: same structure, with the product woven into the answer, linking to the matching list or product, with the disclosure.
+
+Graphics:
+- **No product labels or counts** on graphics. The image shows it; the alt text and description name it. Clearly shopping-style Pins (gift guides) may label sparingly, never with counts or sizes.
+- Shopping words ("must-have", "essentials", "shop", "buy", "deal") stay out of headlines.
+- No pressure to buy, no developmental promises, and never imply families need expensive things.
 
 ## 4. Keywords & metadata (maximise discovery)
 
@@ -71,7 +81,7 @@ Then:
 - Never show prices or "deals" on Pins or in copy (Amazon policy).
 - Never use Amazon-hosted product photos. Only product images Ellie supplied (in `assets/products/`).
 - Age labels must match the product listing. If a product's listing age doesn't fit the Pin's age range, leave it out of that Pin (note in log).
-- Never photos of children unless Ellie supplies them and confirms permission; never commit children's photos to this public repo.
+- Photos of children only from Ellie, only those she has permission to publish, and preferably without identifiable faces. Never crop or edit a photo to reveal a face the original avoided.
 
 ## 6. Visual system
 
@@ -89,7 +99,8 @@ Layouts (render with `scripts/render_pin.py`):
 - **photo** — a lifestyle or room photo, full-bleed on top (`frame: full`) or inside a tall arch (`frame: arch`), headline below/above. Use these as often as the library allows: real moments sell organically better than cut-outs. Lifestyle photos live in `assets/lifestyle/<product-id>/` and are listed in each product's `lifestyle` field; a photo Pin links to the list containing that product, and its description names the product as part of the moment. Never crop to reveal a face that the original avoided.
 
 Rules Ellie set:
-- **Image-centric.** Products are the hero; text is a short title only.
+- **Photography first.** Warm, natural light, rich but believable color, inviting spaces, materials shown in context. Use lifestyle and room photos whenever the library has them; product cut-outs support photos, not replace them.
+- **Image-centric.** Text on the graphic is a short headline only; the guidance lives in the description.
 - **No small notes** on graphics (no tips, no "affiliate links" tags, no captions beyond product names in arches).
 - **Don't place similar-colored products side by side** (e.g. red/yellow dump truck next to the red/yellow Cozy Coupe).
 - 1000 × 1500 px, 2:3.
@@ -99,11 +110,12 @@ Rules Ellie set:
 
 ## 7. Cadence
 
-- Target: **7 Pins per day**, every day, spread across Ellie's niche lists (see §9). Not only gift guides.
+- Target: **7 Pins per day**, every day.
+- **Daily mix: about 3 no-purchase Pins and 4 product-supported Pins.** The product-supported Pins are spread across Ellie's niche lists (§9). While holiday searches peak, at most 2 of the 4 are gift guides. If the photo library can't support 3 beautiful no-purchase Pins, make as many as it can and tell Ellie which photos would unlock more; never fill the gap with weak images.
 - Mix: aim for no more than 3 Pins to the same destination URL per day; rotate boards; mix layouts. While the catalog has only one or two lists, more Pins may share a URL, but each must be a clearly different design, product subset and search angle (never near-duplicates).
 - Products with `"hold": true` in `catalog/products.json` are not used in new Pins until Ellie confirms the image matches the listing.
 - Products whose `listing_age` falls outside a Pin's stated age range are left out of that Pin.
-- Order of priority while holiday searches peak (Nov–mid Dec): holiday gift guides by age, themed gift sets (movement, sensory, wooden, "gifts that aren't plastic", stocking stuffers), then single-product heroes.
+- Seasonal timing: in Nov–mid Dec, gift guides by age and themed gift ideas are timely for the gift-guide slots; framing stays need-first ("what will they actually play with?").
 
 ## 8. Board map
 

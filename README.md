@@ -3,15 +3,18 @@
 Pinterest Pin pipeline for **Yalla | Play & Childhood** (pinterest.com/yallachildcare).
 Public on purpose: Buffer downloads Pin images from `raw.githubusercontent.com`. Never commit photos of children or anything private.
 
-Read **STANDARDS.md** before making any Pin.
+Read **BRAND.md** and **STANDARDS.md** before making any Pin.
 
 ## Layout
 
 | Path | What it is |
 | --- | --- |
 | `STANDARDS.md` | Brand voice, keyword strategy, visual rules, compliance, board map, cadence |
+| `BRAND.md` | Who Yalla is, who it serves, how content works (wins any conflict) |
+| `catalog/ideas.json` | No-purchase Pin topics: the need, audience, search phrase and the photo each needs |
+| `catalog/destinations.json` | Yalla resource pages no-purchase Pins can link to (empty until the site has them) |
 | `catalog/lists.json` | Amazon Storefront lists with exact tagged URLs |
-| `catalog/products.json` | Products with supplied cut-out images, listing ages, colors, themes |
+| `catalog/products.json` | Products: cut-out image, lifestyle photos, listing ages, colors, themes, and `firsthand` (Ellie's own experience, or null) |
 | `assets/products/` | Product cut-outs (supplied by Ellie only, never Amazon photos) |
 | `assets/originals/<product-id>.png` | Product images exactly as Ellie supplied them |
 | `assets/lifestyle/<product-id>/` | Lifestyle photos of each product in use, listed in that product's `lifestyle` field. No identifiable children unless Ellie confirms permission |
