@@ -80,6 +80,8 @@ Fonts: **Lora** (headlines; final clause in *italic*), **DM Sans** (eyebrows/sma
 Brand marks: real wordmark file only (never retyped). **The logo is never central.** No logo bands. On some Pins a tiny wordmark sits quietly in a bottom corner (`"mark": "small"`, ~64px wide, low opacity); on others there is no mark at all (`"mark": "none"`). Vary it across the day's set — roughly half with a small mark, half without. The scallop is used only as a soft edge on photo panels, never as a branded band.
 
 Layouts (render with `scripts/render_pin.py`):
+- **float — the primary layout for product Pins.** Product cut-outs are spread seamlessly across the Pin with soft shadows, like an editorial flat-lay, never boxed into tiles, grids or side-by-side frames. Optionally around a lifestyle photo (arch, rounded or full-width), with products overlapping the photo's edges so the photo and products read as one scene. Place each item by hand (`items` with x/y/w): vary sizes by real-world scale, keep generous breathing room, let a few items overlap photo edges, never overlap the headline, keep furniture upright (rotate ≤3°; soft goods like mats or silks up to ~8°), and never put similar colors side by side. Always look at the render and adjust until it feels composed, not stacked.
+- The layouts below are secondary; use them sparingly.
 - **band-collage** — products floating on Chalk around a full-width scalloped Yalla Blue title band. Big guides (8–14 products).
 - **arches** — 2/4/6 products in Mist arches, Lora headline, Blue scallop band with wordmark. Themed sets.
 - **hero** — one product large in an arch, headline above. Single-product Pins.

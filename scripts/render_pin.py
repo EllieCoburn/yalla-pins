@@ -163,6 +163,38 @@ def story(spec, P):
             f'{mark(spec, text == C["chalk"])}</div>')
 
 
+def float_layout(spec, P):
+    """Free composition: products float on the page with soft shadows, optionally around a lifestyle photo.
+    spec:
+      background  chalk | mist | blue | ink
+      head        {"x","y","w","align": "left"|"center", "size"}  headline block position (uses eyebrow/headline/headline_em)
+      photo       optional {"src","x","y","w","h","radius" (CSS border-radius), "position"}
+      items       [{"id","x","y","w","z"(optional),"rot"(optional deg)}]  height follows the cut-out's proportions
+      shadow      true (default) — soft grounded drop shadow under each product
+    """
+    bg, text, accent, _, _ = BG[spec.get("background", "chalk")]
+    hd = spec.get("head", {"x": 70, "y": 90, "w": 860, "align": "center"})
+    align = hd.get("align", "center")
+    eb = html.escape(spec.get("eyebrow", ""))
+    h = html.escape(spec.get("headline", ""))
+    em = html.escape(spec.get("headline_em", ""))
+    head = (f'<div style="position:absolute;left:{hd["x"]}px;top:{hd["y"]}px;width:{hd["w"]}px;text-align:{align};z-index:20">'
+            + (f'<p style="margin:0 0 14px;font:500 20px/1.2 \'DM Sans\';letter-spacing:.22em;text-transform:uppercase;color:{text};opacity:.8">{eb}</p>' if eb else "")
+            + f'<h1 style="margin:0;font:400 {hd.get("size", 84)}px/1.04 Lora;letter-spacing:-.015em;color:{text}">{h} '
+              f'<em style="display:block;font-style:italic;color:{accent}">{em}</em></h1></div>')
+    ph = ""
+    if spec.get("photo"):
+        q = spec["photo"]
+        ph = (f'<img src="{a(q["src"])}" style="position:absolute;left:{q["x"]}px;top:{q["y"]}px;width:{q["w"]}px;height:{q["h"]}px;'
+              f'object-fit:cover;object-position:{q.get("position", "50% 50%")};border-radius:{q.get("radius", "0")};z-index:1">')
+    sh = "filter:drop-shadow(0 22px 26px rgba(41,44,69,.16)) drop-shadow(0 4px 6px rgba(41,44,69,.10));" if spec.get("shadow", True) else ""
+    items = "".join(
+        f'<img src="{a(P[it["id"]]["image"])}" style="position:absolute;left:{it["x"]}px;top:{it["y"]}px;width:{it["w"]}px;height:auto;'
+        f'z-index:{it.get("z", 10)};transform:rotate({it.get("rot", 0)}deg);{sh}">' for it in spec["items"])
+    return (f'<div style="width:1000px;height:1500px;position:relative;overflow:hidden;background:{bg}">'
+            f'{ph}{head}{items}{mark(spec, text == C["chalk"])}</div>')
+
+
 def band_collage(spec, P):
     bt = spec["band_title"]
     top = spec.get("band_top", 612)
@@ -185,7 +217,7 @@ def band_collage(spec, P):
 def render(spec_path, out_path):
     spec = json.loads(Path(spec_path).read_text())
     P = load_products()
-    body = {"arches": arches, "hero": hero, "band-collage": band_collage, "photo": photo, "story": story}[spec["layout"]](spec, P)
+    body = {"arches": arches, "hero": hero, "band-collage": band_collage, "photo": photo, "story": story, "float": float_layout}[spec["layout"]](spec, P)
     fonts = (f"@font-face{{font-family:Lora;src:url({a('assets/fonts/Lora.ttf')});font-style:normal;font-weight:400 700}}"
              f"@font-face{{font-family:Lora;src:url({a('assets/fonts/Lora-Italic.ttf')});font-style:italic;font-weight:400 700}}"
              f"@font-face{{font-family:'DM Sans';src:url({a('assets/fonts/DMSans.ttf')});font-weight:100 1000}}")
