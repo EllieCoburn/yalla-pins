@@ -61,6 +61,19 @@ Graphics:
 - Shopping words ("must-have", "essentials", "shop", "buy", "deal") stay out of headlines.
 - No pressure to buy, no developmental promises, and never imply families need expensive things.
 
+## 3c. Write like a person, not like AI
+
+Ellie's feedback: the copy sounded generic and AI-written. Every description, headline and list line must pass this check.
+
+- **Short.** Descriptions 200–350 characters. One idea per Pin.
+- **Concrete over abstract.** Name what you'd actually see or do ("a scarf, a fabric book, a grown-up lying on the floor"), not qualities ("inviting", "intentional", "thoughtful", "calm and connected").
+- **Plain words a teacher would say out loud.** Lists on graphics are plain nouns and short phrases ("Changing table, a cubby per child, a sink"), not poetic lines.
+- **Keywords live in the title.** The description just talks; don't stuff search phrases into it.
+- **Banned patterns:** "X doesn't have to be Y"; "it starts with…"; "not just X, but Y"; "the heart of"; "more than just"; "whether you're… or…"; "elevate"; "curated"; "journey"; "nurture/foster/cultivate"; "seamless"; "space to grow"; "a moment of connection"; "here's the thing"; rhetorical question openers; tidy triplets everywhere; tacked-on endings like "Ideas for infant teachers and home daycare providers"; "everything else is decoration"-style aphorisms.
+- **Vary the shape.** Not every Pin opens the same way or ends the same way.
+- **No invented experience.** Without a `firsthand` note, don't write "we", "our favorite", "in our room".
+- Read it aloud. If it sounds like an ad or a horoscope, rewrite it.
+
 ## 4. Keywords & metadata (maximise discovery)
 
 For every Pin, before writing, identify:
