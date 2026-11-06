@@ -1,0 +1,5 @@
+{"layout":"checklist","background":"chalk","top_height":640,
+ "items":[{"id":"changing-set","x":90,"y":60,"w":330},{"id":"rattan-stackable-baskets","x":520,"y":200,"w":300,"rot":-3},{"id":"wicker-key-baskets","x":610,"y":430,"w":260,"rot":4}],
+ "eyebrow":"The diapering space","headline":"Everything","headline_em":"within one arm.","headline_size":70,
+ "list":["Changing table at your waist height","A labeled cubby for each child's supplies","Gloves, wipes and cream reachable with one hand","A sink close by","Something for baby to look at overhead"],
+ "mark":"small","mark_corner":"bl"}

@@ -195,6 +195,44 @@ def float_layout(spec, P):
             f'{ph}{head}{items}{mark(spec, text == C["chalk"])}</div>')
 
 
+def checklist(spec, P):
+    """Image on top (photo or floating cut-outs), headline, then a short list of what the space needs.
+    spec: background; top_height (default 640);
+      photo {"src","position","frame": "full"|"arch"} OR items [{"id","x","y","w","rot"}] placed inside the top area;
+      list ["...", ...]  (simple list)  OR  sections [{"name": "...", "items": "comma line"}] (overview)."""
+    bg, text, accent, arch, _ = BG[spec.get("background", "chalk")]
+    th = spec.get("top_height", 640)
+    top = ""
+    if spec.get("photo"):
+        q = spec["photo"]
+        if q.get("frame", "full") == "arch":
+            top = (f'<div style="height:{th}px;flex-shrink:0;padding:70px 150px 0;box-sizing:border-box;display:flex">'
+                   f'<img src="{a(q["src"])}" style="flex:1;min-width:0;height:100%;object-fit:cover;object-position:{q.get("position","50% 50%")};'
+                   f'border-radius:350px 350px 0 0"></div>')
+        else:
+            top = (f'<img src="{a(q["src"])}" style="width:1000px;height:{th}px;object-fit:cover;object-position:{q.get("position","50% 50%")};flex-shrink:0">')
+    elif spec.get("items"):
+        sh = "filter:drop-shadow(0 22px 26px rgba(41,44,69,.16)) drop-shadow(0 4px 6px rgba(41,44,69,.10));"
+        imgs = "".join(f'<img src="{a(P[i["id"]]["image"])}" style="position:absolute;left:{i["x"]}px;top:{i["y"]}px;width:{i["w"]}px;'
+                       f'transform:rotate({i.get("rot",0)}deg);{sh}">' for i in spec["items"])
+        top = f'<div style="position:relative;height:{th}px;flex-shrink:0">{imgs}</div>'
+    rule = "rgba(247,245,239,.35)" if text == C["chalk"] else "#D6CFC3"
+    if spec.get("sections"):
+        rows = "".join(
+            f'<div style="display:grid;grid-template-columns:210px minmax(0,1fr);column-gap:24px;padding:21px 0;border-top:1px solid {rule}">'
+            f'<p style="margin:0;font:400 italic 32px/1.2 Lora;color:{accent}">{html.escape(sec["name"])}</p>'
+            f'<p style="margin:0;font:400 26px/1.4 \'DM Sans\';color:{text}">{html.escape(sec["items"])}</p></div>' for sec in spec["sections"])
+    else:
+        rows = "".join(
+            f'<div style="display:flex;gap:18px;align-items:baseline;padding:20px 0;border-top:1px solid {rule}">'
+            f'<span style="flex-shrink:0;width:10px;height:10px;border-radius:50%;background:{accent};transform:translateY(-4px)"></span>'
+            f'<p style="margin:0;font:400 31px/1.35 \'DM Sans\';color:{text}">{html.escape(t)}</p></div>' for t in spec["list"])
+    return (f'<div style="width:1000px;height:1500px;position:relative;background:{bg};display:flex;flex-direction:column;overflow:hidden">'
+            f'{top}<div style="padding-top:{spec.get("head_pad", 50)}px">{headline_html(spec, text, accent, spec.get("headline_size", 72))}</div>'
+            f'<div style="padding:0 84px;margin-top:40px;display:flex;flex-direction:column"><div style="border-bottom:1px solid {rule}">{rows}</div></div>'
+            f'{mark(spec, text == C["chalk"])}</div>')
+
+
 def band_collage(spec, P):
     bt = spec["band_title"]
     top = spec.get("band_top", 612)
@@ -217,7 +255,7 @@ def band_collage(spec, P):
 def render(spec_path, out_path):
     spec = json.loads(Path(spec_path).read_text())
     P = load_products()
-    body = {"arches": arches, "hero": hero, "band-collage": band_collage, "photo": photo, "story": story, "float": float_layout}[spec["layout"]](spec, P)
+    body = {"arches": arches, "hero": hero, "band-collage": band_collage, "photo": photo, "story": story, "float": float_layout, "checklist": checklist}[spec["layout"]](spec, P)
     fonts = (f"@font-face{{font-family:Lora;src:url({a('assets/fonts/Lora.ttf')});font-style:normal;font-weight:400 700}}"
              f"@font-face{{font-family:Lora;src:url({a('assets/fonts/Lora-Italic.ttf')});font-style:italic;font-weight:400 700}}"
              f"@font-face{{font-family:'DM Sans';src:url({a('assets/fonts/DMSans.ttf')});font-weight:100 1000}}")

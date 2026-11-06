@@ -1,0 +1,66 @@
+{
+ "layout": "checklist",
+ "background": "chalk",
+ "top_height": 560,
+ "items": [
+  {
+   "id": "cloudsoft-mat",
+   "x": 70,
+   "y": 80,
+   "w": 230,
+   "rot": -4
+  },
+  {
+   "id": "daycare-crib-evac",
+   "x": 330,
+   "y": 60,
+   "w": 330
+  },
+  {
+   "id": "changing-table",
+   "x": 700,
+   "y": 120,
+   "w": 250
+  },
+  {
+   "id": "feeding-chairs-7",
+   "x": 130,
+   "y": 390,
+   "w": 300
+  },
+  {
+   "id": "book-display",
+   "x": 560,
+   "y": 400,
+   "w": 320
+  }
+ ],
+ "eyebrow": "Setting up an infant room",
+ "headline": "The infant room,",
+ "headline_em": "space by space.",
+ "headline_size": 70,
+ "head_pad": 30,
+ "sections": [
+  {
+   "name": "Movement",
+   "items": "Soft floor, low mirror, a bar to pull up on"
+  },
+  {
+   "name": "Rest",
+   "items": "One crib per baby, a fitted sheet, nothing else"
+  },
+  {
+   "name": "Meals",
+   "items": "Low chairs, small cups, a wipeable floor"
+  },
+  {
+   "name": "Care",
+   "items": "Changing table at your height, supplies in reach"
+  },
+  {
+   "name": "Books & quiet",
+   "items": "Books facing out, a soft corner, low baskets"
+  }
+ ],
+ "mark": "small"
+}

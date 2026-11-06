@@ -92,6 +92,7 @@ Brand marks: real wordmark file only (never retyped). **The logo is never centra
 
 Layouts (render with `scripts/render_pin.py`):
 - **float — the primary layout for product Pins.** Product cut-outs are spread seamlessly across the Pin with soft shadows, like an editorial flat-lay, never boxed into tiles, grids or side-by-side frames. Optionally around a lifestyle photo (arch, rounded or full-width), with products overlapping the photo's edges so the photo and products read as one scene. Place each item by hand (`items` with x/y/w): vary sizes by real-world scale, keep generous breathing room, let a few items overlap photo edges, never overlap the headline, keep furniture upright (rotate ≤3°; soft goods like mats or silks up to ~8°), and never put similar colors side by side. Always look at the render and adjust until it feels composed, not stacked.
+- **checklist** — image on top (photo or floating cut-outs), headline, then a short list (4–6 items) of what a space or setup needs; or `sections` for an overview (space name + one line each). Great for "what each space needs" and setup guides. Keep each line short enough to fit on one line.
 - The layouts below are secondary; use them sparingly.
 - **band-collage** — products floating on Chalk around a full-width scalloped Yalla Blue title band. Big guides (8–14 products).
 - **arches** — 2/4/6 products in Mist arches, Lora headline, Blue scallop band with wordmark. Themed sets.
