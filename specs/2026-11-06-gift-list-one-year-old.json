@@ -1,0 +1,4 @@
+{"layout":"checklist","background":"chalk","top_height":700,
+ "items":[{"id":"balance-bike","x":40,"y":110,"w":380},{"id":"stacking-cups","x":460,"y":50,"w":130},{"id":"stacking-rocks","x":640,"y":90,"w":300},{"id":"egg-shakers","x":90,"y":420,"w":200,"rot":-6},{"id":"silks","x":360,"y":420,"w":520,"rot":-3}],
+ "eyebrow":"Gift list · 12–24 months","headline":"One from","headline_em":"each line.","headline_size":76,"head_pad":20,
+ "sections":[{"name":"To ride","items":"A four-wheel balance bike"},{"name":"To stack","items":"Jumbo wooden stacking rocks"},{"name":"To shake","items":"Wooden egg shakers"},{"name":"To pour","items":"Stacking cups, in the bath or outside"},{"name":"To hide under","items":"A set of play silks"}],"mark":"none"}

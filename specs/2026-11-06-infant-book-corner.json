@@ -1,0 +1,4 @@
+{"layout":"checklist","background":"mist","top_height":600,
+ "items":[{"id":"book-display","x":50,"y":150,"w":470},{"id":"cubby-cabinet","x":560,"y":70,"w":390},{"id":"rattan-round-baskets","x":620,"y":380,"w":230,"rot":4}],
+ "eyebrow":"Infant room","headline":"A book corner","headline_em":"for babies","headline_size":76,"head_pad":20,
+ "list":["Books facing out, not spine first","Board and cloth books they can chew","Only a few books out at a time","Baskets for books that get carried off","A soft spot for a grown-up to sit"],"mark":"small"}
