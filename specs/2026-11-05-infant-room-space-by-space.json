@@ -35,31 +35,31 @@
    "w": 320
   }
  ],
- "eyebrow": "Setting up an infant room",
- "headline": "The infant room,",
- "headline_em": "space by space.",
+ "eyebrow": "Infant room checklist",
+ "headline": "Setting up",
+ "headline_em": "an infant room",
  "headline_size": 70,
  "head_pad": 30,
  "sections": [
   {
-   "name": "Movement",
-   "items": "Soft floor, low mirror, a bar to pull up on"
+   "name": "Play",
+   "items": "Open floor, soft mat, low mirror, low shelf"
   },
   {
-   "name": "Rest",
-   "items": "One crib per baby, a fitted sheet, nothing else"
+   "name": "Sleep",
+   "items": "A crib for each baby, fitted sheet only"
   },
   {
-   "name": "Meals",
-   "items": "Low chairs, small cups, a wipeable floor"
+   "name": "Eating",
+   "items": "Low chairs with trays, bibs, small cups"
   },
   {
-   "name": "Care",
-   "items": "Changing table at your height, supplies in reach"
+   "name": "Diapering",
+   "items": "Changing table, a cubby per child, a sink"
   },
   {
-   "name": "Books & quiet",
-   "items": "Books facing out, a soft corner, low baskets"
+   "name": "Books",
+   "items": "Low book display, a soft spot to read"
   }
  ],
  "mark": "small"

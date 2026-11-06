@@ -13,7 +13,8 @@ Honesty note: no copy guarantees virality. We maximise the odds: usefulness, sea
 
 ## 2. Workflow (non-negotiable)
 
-- Claude builds Pins and saves them to **Buffer as drafts only**. Never `shareNow`, never `addToQueue`, never `shareNext`.
+- **Nothing goes to Buffer without Ellie's explicit go-ahead.** Claude shows every Pin (image, title, description, alt text, board, link, planned date) to Ellie first. Only after she explicitly approves that Pin does Claude save it to Buffer. Approval of one Pin or batch never carries over to others.
+- Once approved, Claude saves Pins to **Buffer as drafts only**. Never `shareNow`, never `addToQueue`, never `shareNext`.
 - **Every draft carries its own planned date and time** (`mode: customScheduled` with `dueAt`, plus `saveToDraft: true`), chosen by the spacing rules in §7a. That way, when Ellie approves a draft, it goes out on its planned day, never back to back with similar Pins. Tell Ellie to approve drafts with **Schedule** (keeping the planned time), not "Add to Queue".
 - Ellie reviews, tweaks and approves each draft in Buffer.
 - Every Pin made is logged in `log/pins.jsonl`.
