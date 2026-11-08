@@ -225,8 +225,9 @@ def checklist(spec, P):
     else:
         rows = "".join(
             f'<div style="display:flex;gap:18px;align-items:baseline;padding:20px 0;border-top:1px solid {rule}">'
-            f'<span style="flex-shrink:0;width:10px;height:10px;border-radius:50%;background:{accent};transform:translateY(-4px)"></span>'
-            f'<p style="margin:0;font:400 31px/1.35 \'DM Sans\';color:{text}">{html.escape(t)}</p></div>' for t in spec["list"])
+            + (f'<span style="flex-shrink:0;width:34px;font:400 italic 34px/1 Lora;color:{accent}">{n}</span>' if spec.get("numbered") else
+               f'<span style="flex-shrink:0;width:10px;height:10px;border-radius:50%;background:{accent};transform:translateY(-4px)"></span>')
+            + f'<p style="margin:0;font:400 31px/1.35 \'DM Sans\';color:{text}">{html.escape(t)}</p></div>' for n, t in enumerate(spec["list"], 1))
     return (f'<div style="width:1000px;height:1500px;position:relative;background:{bg};display:flex;flex-direction:column;overflow:hidden">'
             f'{top}<div style="padding-top:{spec.get("head_pad", 50)}px">{headline_html(spec, text, accent, spec.get("headline_size", 72))}</div>'
             f'<div style="padding:0 84px;margin-top:40px;display:flex;flex-direction:column"><div style="border-bottom:1px solid {rule}">{rows}</div></div>'
