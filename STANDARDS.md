@@ -83,11 +83,19 @@ For every Pin, before writing, identify:
 
 Then:
 - **Title (≤100 chars):** lead with the exact high-intent search phrase, then Yalla's angle. Example: `Gift Ideas for 1 Year Olds: Open-Ended Toddler Gifts They'll Grow Into (12–24 Months)`.
-- **Description (≤500 chars, aim 400–480):** first sentence restates the main keyword naturally. Name the actual products (brand names are searched: Nugget, Stapelstein, Pikler, Cozy Coupe, bilibo). Weave in 3–5 related search phrases as natural sentences, never a keyword dump. End with the disclosure.
+- **Description (≤500 chars, aim 400–480):** the main search phrase (or a natural form of it) must appear in the **first sentence**, never only later. "In our play yard, a few jugs…" fails; "Outdoor water play for toddlers can be as simple as…" passes. Check this on every Pin before showing Ellie. Name the actual products (brand names are searched: Nugget, Stapelstein, Pikler, Cozy Coupe, bilibo). Weave in 3–5 related search phrases as natural sentences, never a keyword dump. End with the disclosure.
 - **Alt text:** describe the image accurately and name every product shown. Keyword-rich but true.
-- **Board:** the most specific matching board (see §8). Board names are keywords.
+- **Board:** the most specific matching board (see §8). Board names are keywords, so pick the board whose name best matches the search phrase; avoid catch-all boards (e.g. "Types of Play") when a more specific one fits.
+- **Name the product.** Product Pins name the product or brand in the description (people search brand and product names). If the product isn't in `catalog/products.json`, ask Ellie for its name or add it to the catalog before writing; never guess it.
 - **Hashtags:** none. They no longer help on Pinterest and Buffer has no Pinterest tag field.
 - **Seasonal lead time:** publish seasonal Pins 30–60 days before the moment.
+
+### 4a. Video Pins
+- Convert to H.264 MP4 and strip metadata (location) before committing: `ffmpeg -i in.MOV -map_metadata -1 -c:v libx264 -crf 23 -pix_fmt yuv420p -c:a aac -movflags +faststart out.mp4`. Videos live in `pins/video/`. Children only with Ellie's confirmed permission, no identifiable faces.
+- **Text on the first frame.** Burn a short keyword headline (Lora, plain clause + italic clause, as on graphics) into the first ~3 seconds, so the Pin reads in the feed before it plays and Pinterest can read it.
+- **Cover frame:** pick a clear, well-lit frame (`thumbnailOffset`) that shows the activity, not a blurry transition.
+- Buffer has no alt text field for Pinterest video, so the description must say plainly what the video shows.
+- A strong video can be re-Pinned later as a fresh Pin (new headline overlay, new keyword angle, different cover), respecting the 21-day same-photo spacing.
 
 ## 5. Affiliate & compliance
 
@@ -178,3 +186,12 @@ Daily mix:
 - Angles: natural / neutral infant room; Reggio Emilia-inspired infant room; Montessori-style infant room; movement & tummy time area (mats, mirror with bar, mirror cubbies); diapering station (changing table, wall organizer); rest area (daycare cribs); feeding (low chairs); low open shelves and natural-material baskets; home daycare infant setup; setting up a new infant room checklist.
 - Never claim a product meets licensing or safety regulations. Licensing rules vary by state: when relevant, say "check your state's licensing requirements". Describe crib/changing-table features only as the listing states them.
 - Real photos of a calm, natural infant room (no children, or only with permission and never in this public repo) outperform product collages for "infant classroom setup" searches — ask Ellie for them.
+
+## 10. Learning from results (weekly performance check)
+
+Once a week (on the first daily run on or after Monday), before planning:
+1. Pull every Pin sent in the last 30 days with Buffer `list_posts` (organization `6aecd856030645f4bf9f3947`, channel `6aecd9dfe29c69a17174b1df`, status `sent`, `includeMetrics: true`), plus `get_aggregated_post_metrics` for the same window.
+2. Match each post to its `log/pins.jsonl` line (by `buffer_post_id` or image URL) to get its layout, topic, search angle, board, list and kind.
+3. Write `log/performance.md` (newest week on top): the top 3 and bottom 3 Pins by saves, then outbound clicks, then impressions; what the top Pins share (layout, photo vs cut-out, headline style, topic, search angle, time of day, board); and 2–4 concrete changes for the coming week (e.g. "more photo layouts", "retire angle X", "re-Pin the water play video with a new keyword").
+4. Apply those changes when planning, and mention the week's findings in one short paragraph at the top of the message to Ellie.
+5. Metrics lag up to a day and Pinterest takes weeks to rank Pins, so treat early numbers as hints, not verdicts, and don't drop a topic on one week's data. If Buffer returns no metrics for Pinterest, say so to Ellie instead of guessing.
