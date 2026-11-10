@@ -1,0 +1,7 @@
+{"layout": "checklist", "background": "mist", "top_height": 760,
+ "items": [{"id": "diaper-organizer", "x": 300, "y": 60, "w": 620},
+           {"id": "cubby-cabinet", "x": 60, "y": 330, "w": 430},
+           {"id": "rattan-bread-baskets", "x": 560, "y": 500, "w": 330, "rot": -3}],
+ "eyebrow": "Infant classroom organization", "headline": "Up high,", "headline_em": "down low", "headline_size": 84, "head_pad": 10,
+ "list": ["Up high: diapers, wipes, gloves, cream", "Grown-up height: spare clothes by name", "Down low: a few baskets of toys", "Out of the room: extra stock"],
+ "mark": "small"}
