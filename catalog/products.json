@@ -257,7 +257,7 @@
   "id": "stacking-rocks",
   "name": "Jumbo stacking rocks",
   "brand": "OESSUF",
-  "listing_title": "OESSUF Extra-Large Stacking Rocks for Toddlers 1-3, 16 PCS Wooden Balancing Stones",
+  "listing_title": "Extra-Large Stacking Rocks for Toddlers 1-3, 16 PCS Wooden Montessori Toys, Safe Smooth Jumbo Balancing Stones for Open-Ended Sensory Play, STEM Building Blocks for Boys & Girls",
   "image": "assets/products/stacking-rocks.png",
   "colors": [
    "rainbow"
@@ -272,8 +272,15 @@
   ],
   "listing_age": "1-3 years",
   "product_url": null,
-  "lifestyle": [],
-  "firsthand": null
+  "lifestyle": [
+   {
+    "file": "assets/lifestyle/stacking-rocks/stacking-rocks-01.jpg",
+    "description": "Child's hands stacking a rainbow tower of jumbo wooden stones on a jute rug, loose stones in front; cropped below the face from Ellie's photo",
+    "faces": false
+   }
+  ],
+  "firsthand": null,
+  "sizes": "4 sizes per listing image: about 4.2, 3.4, 3.1 and 2.4 in long, 0.79 in thick"
  },
  {
   "id": "bilibo",
