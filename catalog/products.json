@@ -739,5 +739,35 @@
   "product_url": null,
   "lifestyle": [],
   "firsthand": null
+ },
+ {
+  "id": "balancing-stones",
+  "name": "Wooden balancing stones",
+  "brand": null,
+  "listing_title": null,
+  "asin": "B0CC21QD2Y",
+  "image": null,
+  "colors": [
+   "muted rainbow",
+   "natural wood"
+  ],
+  "lists": [],
+  "themes": [
+   "loose parts",
+   "open-ended",
+   "wooden",
+   "stacking"
+  ],
+  "listing_age": null,
+  "product_url": "https://www.amazon.com/dp/B0CC21QD2Y?linkCode=ssc&tag=nataliemart0f-20&creativeASIN=B0CC21QD2Y&asc_item-id=amzn1.ideas.3F6Z4LH9UKFMZ&ref_=aip_sf_list_spv_ons_d_asin&th=1",
+  "note": "Added 2026-11-12 from Ellie's link and photo. Brand, listing title and listing age not yet verified (Amazon blocks automated reading); Ellie to confirm. Ellie to confirm the lifestyle photo is hers to use (not the brand's listing image).",
+  "lifestyle": [
+   {
+    "file": "assets/lifestyle/balancing-stones/balancing-stones-01.jpg",
+    "description": "Colorful wooden balancing stones and wooden tree pieces stacked into towers on a low wooden shelf, rattan baskets below; no children",
+    "faces": false
+   }
+  ],
+  "firsthand": null
  }
 ]
