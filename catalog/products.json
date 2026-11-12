@@ -271,7 +271,7 @@
    "sensory"
   ],
   "listing_age": "1-3 years",
-  "product_url": null,
+  "product_url": "https://www.amazon.com/dp/B09BCMP8XX?linkCode=ssc&tag=nataliemart0f-20&creativeASIN=B09BCMP8XX&asc_item-id=amzn1.ideas.3F6Z4LH9UKFMZ&ref_=aip_sf_list_spv_ons_d_asin",
   "lifestyle": [
    {
     "file": "assets/lifestyle/stacking-rocks/stacking-rocks-01.jpg",
@@ -280,7 +280,8 @@
    }
   ],
   "firsthand": null,
-  "sizes": "4 sizes per listing image: about 4.2, 3.4, 3.1 and 2.4 in long, 0.79 in thick"
+  "sizes": "4 sizes per listing image: about 4.2, 3.4, 3.1 and 2.4 in long, 0.79 in thick",
+  "asin": "B09BCMP8XX"
  },
  {
   "id": "bilibo",
